@@ -3804,6 +3804,308 @@ dialog.ecovacs-modal::backdrop {
   }
 }
 
+
+/* ==========================================================================
+   PAN-INDIA MAP ONLY: BROADER LAYOUT & COMIC SHOWROOM CALLOUT BUBBLES
+   ========================================================================== */
+.sets-us-apart-section {
+  background: #ffffff;
+  padding: 56px 24px 64px;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.sets-us-apart-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.map-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.sets-us-apart-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  color: #64748b;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px;
+  line-height: 1.6;
+}
+
+.sets-us-apart-grid {
+  display: block;
+  width: 100%;
+}
+
+.map-area {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.map-interactive-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  display: inline-block;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 24px 28px 32px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.map-interactive-wrapper .map-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.06));
+}
+
+/* Comic Speech Bubble Callout */
+.comic-speech-bubble {
+  position: absolute;
+  z-index: 100;
+  width: min(340px, 92vw);
+  background: #ffffff;
+  border: 2.5px solid #0f172a;
+  border-radius: 14px;
+  padding: 16px 18px 14px;
+  box-shadow: 4px 6px 0px rgba(15, 23, 42, 0.9), 0 12px 28px rgba(0, 0, 0, 0.12);
+  transform: translate(-50%, -100%);
+  margin-top: -18px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.comic-speech-bubble.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Pointer tails */
+.comic-speech-bubble::after,
+.comic-speech-bubble::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.comic-speech-bubble::after {
+  bottom: -10px;
+  border-width: 10px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+  z-index: 2;
+}
+
+.comic-speech-bubble::before {
+  bottom: -14px;
+  border-width: 13px 13px 0 13px;
+  border-color: #0f172a transparent transparent transparent;
+  z-index: 1;
+}
+
+/* Offset positioning to prevent edge clipping */
+.comic-speech-bubble.tail-left {
+  transform: translate(-18%, -100%);
+}
+.comic-speech-bubble.tail-left::after,
+.comic-speech-bubble.tail-left::before {
+  left: 18%;
+}
+
+.comic-speech-bubble.tail-right {
+  transform: translate(-82%, -100%);
+}
+.comic-speech-bubble.tail-right::after,
+.comic-speech-bubble.tail-right::before {
+  left: 82%;
+}
+
+/* Comic Bubble Typography & Components */
+.comic-bubble-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  border-bottom: 1.5px dashed #cbd5e1;
+  padding-bottom: 6px;
+}
+
+.comic-bubble-badge {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #184784;
+  padding: 3px 8px;
+  border-radius: 99px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.comic-bubble-close {
+  background: #f1f5f9;
+  border: 1.5px solid #0f172a;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.comic-bubble-close:hover {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+}
+
+.comic-bubble-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.comic-stores-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 175px;
+  overflow-y: auto;
+  margin-bottom: 8px;
+}
+
+.comic-store-item {
+  padding: 6px 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.comic-store-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #184784;
+  margin-bottom: 2px;
+}
+
+.comic-store-address {
+  font-size: 11px;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.comic-bubble-hours {
+  font-size: 11px;
+  font-weight: 600;
+  color: #15803d;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.comic-bubble-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.comic-btn-primary {
+  flex: 1;
+  text-align: center;
+  font-size: 11.5px;
+  font-weight: 700;
+  background: #184784;
+  color: #ffffff;
+  border: 1.5px solid #0f172a;
+  padding: 7px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 2px 2px 0px #0f172a;
+  transition: all 0.15s;
+}
+
+.comic-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 2px 3px 0px #0f172a;
+  background: #0056b3;
+}
+
+.comic-btn-secondary {
+  flex: 1;
+  text-align: center;
+  font-size: 11.5px;
+  font-weight: 700;
+  background: #ffffff;
+  color: #0f172a;
+  border: 1.5px solid #0f172a;
+  padding: 7px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 2px 2px 0px #0f172a;
+  transition: all 0.15s;
+}
+
+.comic-btn-secondary:hover {
+  background: #f1f5f9;
+}
+
+/* Mobile & Laptop Responsive */
+@media (max-width: 768px) {
+  .sets-us-apart-section {
+    padding: 36px 14px 44px !important;
+  }
+  .map-heading {
+    font-size: 22px !important;
+  }
+  .sets-us-apart-subtitle {
+    font-size: 13.5px !important;
+    margin-bottom: 20px !important;
+  }
+  .map-interactive-wrapper {
+    padding: 12px 10px 20px !important;
+    border-radius: 14px !important;
+  }
+  .comic-speech-bubble {
+    width: min(290px, 86vw) !important;
+    padding: 12px 14px 10px !important;
+  }
+  .comic-bubble-actions {
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -4301,11 +4603,11 @@ dialog.ecovacs-modal::backdrop {
 
   <!-- 5. EXPERIENCE STORE NEAR YOU (PAN-INDIA MAP + 3x3 STORE CAROUSEL) -->
   <section id="sets-us-apart" class="sets-us-apart-section">
-    <p class="sets-us-apart-subtitle">Visit our exclusive Frootle India Experience Stores for live product demonstrations and expert guidance.</p>
+    <div class="sets-us-apart-container">
+      <h2 class="map-heading">Frootle India Experience Stores</h2>
+      <p class="sets-us-apart-subtitle">Experience our flagship robots in person. Tap any location pin on the map below to view showroom details, timings, and instant directions.</p>
 
-    <div class="sets-us-apart-grid">
       <div class="map-area">
-        <h3 class="map-heading">Frootle India Experience Store</h3>
         <div class="map-interactive-wrapper" id="storeMapHotspotContainer">
           <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/assets/Ecovacs Frootle Store Map (1).png"
                class="map-img" alt="Frootle India Experience Stores Map" loading="lazy">
@@ -4359,172 +4661,25 @@ dialog.ecovacs-modal::backdrop {
             <span class="pin-core"></span>
             <span class="pin-tooltip">Chennai <span>(1 Store)</span></span>
           </button>
-        </div>
-      </div>
 
-      <div class="stores-carousel-container">
-        <div class="store-city-filter">
-          <select id="storeCityFilter" aria-label="Select City Filter">
-            <option value="ALL">All Cities</option>
-            <option value="Delhi NCR">Delhi NCR (Delhi, Gurgaon, Noida)</option>
-            <option value="Ahmedabad">Ahmedabad</option>
-            <option value="Bangalore">Bangalore</option>
-            <option value="Chennai">Chennai</option>
-            <option value="Coimbatore">Coimbatore</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Gurgaon">Gurgaon</option>
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Jaipur">Jaipur</option>
-            <option value="Kochi">Kochi</option>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Noida">Noida</option>
-            <option value="Pune">Pune</option>
-            <option value="Surat">Surat</option>
-            <option value="Thane">Thane</option>
-            <option value="Vadodara">Vadodara</option>
-          </select>
-        </div>
+          <!-- COMIC SPEECH BUBBLE CALLOUT POPUP -->
+          <div class="comic-speech-bubble" id="comicSpeechBubble" role="dialog" aria-hidden="true">
+            <div class="comic-bubble-header">
+              <span class="comic-bubble-badge">💬 FROOTLE SHOWROOM</span>
+              <button type="button" class="comic-bubble-close" id="closeComicBubble" aria-label="Close details">&times;</button>
+            </div>
+            <h4 class="comic-bubble-title" id="comicBubbleCityTitle">Showroom Location</h4>
+            <div class="comic-stores-list" id="comicBubbleStoresList"></div>
+            <div class="comic-bubble-hours" id="comicBubbleHours">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span>Open Mon - Sun: 10:30 AM - 8:30 PM</span>
+            </div>
+            <div class="comic-bubble-actions">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="comic-btn-primary" id="comicBubbleDirectionsBtn">📍 Directions</a>
+              <a href="#book-demo-experience" class="comic-btn-secondary" onclick="var b = document.getElementById('closeComicBubble'); if(b) b.click();">Book Demo</a>
+            </div>
+          </div>
 
-        <div class="mobile-store-count" id="mobileStoreCount">📍 12 Experience Centers across India &bull; Swipe to browse or select your city above</div>
-        <div class="stores-grid-3x3" id="homeStoresGrid">
-          <div class="store-grid-card" data-city="Ahmedabad" data-title="Ahmedabad Experience Store: Bodakdev" data-address="Gr. Floor, Shop No. 7, Shilp Epitome, Bodakdev, Ahmedabad: 380054">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Ahmedabad: Bodakdev</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Gr. Floor, Shop No. 7, Shilp Epitome, Bodakdev, Ahmedabad: 380054</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Bangalore" data-title="Bangalore Experience Store: HSR Layout" data-address="Gr. Floor, Plot no 2594, HSR Layout sector-1, Bangalore: 560041">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Bangalore: HSR Layout</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Gr. Floor, Plot no 2594, HSR Layout sector-1, Bangalore: 560041</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Bangalore" data-title="Bangalore Experience Store: Whitefield" data-address="Unit No. 01, Gr. Floor, GBS Square, Whitefield, Bangalore: 560066">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Bangalore: Whitefield</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Unit No. 01, Gr. Floor, GBS Square, Whitefield, Bangalore: 560066</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Chennai" data-title="Chennai Experience Store" data-address="Manor A Block, 1st Floor, Rajiv Gandhi Salai, Thoraipakkam, Chennai: 600097">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Chennai</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Manor A Block, 1st Floor, Rajiv Gandhi Salai, Thoraipakkam, Chennai: 600097</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Delhi" data-title="Delhi Experience Store: Dwarka" data-address="Plot no. 66, Sector 12A, Dwarka, Delhi: 110075">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Delhi: Dwarka</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Plot no. 66, Sector 12A, Dwarka, Delhi: 110075</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Gurgaon" data-title="Gurgaon Experience Store" data-address="Unit: 15/14, OPP. EBD 65, Sector 65, Gurugram: 122102">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Gurgaon</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Unit: 15/14, OPP. EBD 65, Sector 65, Gurugram: 122102</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Hyderabad" data-title="Hyderabad Experience Store: Gachibowli" data-address="Gr. Floor, Magna Park View towers, Telecom Nagar, Gachibowli, Hyderabad: 500033">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Hyderabad: Gachibowli</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Gr. Floor, Magna Park View towers, Telecom Nagar, Gachibowli, Hyderabad: 500033</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Mumbai" data-title="Mumbai Experience Store: Ghatkopar" data-address="11th Floor, MICL Aaradhya One Earth, Pant Nagar, Ghatkopar East, Mumbai: 400075">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Mumbai: Ghatkopar</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">11th Floor, MICL Aaradhya One Earth, Pant Nagar, Ghatkopar East, Mumbai: 400075</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Pune" data-title="Pune Experience Store: Viman Nagar" data-address="H-11, Ground Floor, Solitaire Business Hub, Viman Nagar, Pune: 411014">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Pune: Viman Nagar</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">H-11, Ground Floor, Solitaire Business Hub, Viman Nagar, Pune: 411014</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Mumbai" data-title="Mumbai Experience Store: Borivali" data-address="Unit No: 40 & 41, Sheetal Regalia, Borivali East, Mumbai: 400066">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Mumbai: Borivali</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Unit No: 40 & 41, Sheetal Regalia, Borivali East, Mumbai: 400066</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Noida" data-title="Noida Experience Store" data-address="Unit No. DG 17-19, Spectrum Metro Mall II, Sector 75, Noida: 201301">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Noida</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Unit No. DG 17-19, Spectrum Metro Mall II, Sector 75, Noida: 201301</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-          <div class="store-grid-card" data-city="Pune" data-title="Pune Experience Store: Balewadi" data-address="Unit no.1 & 101, Nandan Pro Biz, Balewadi, Pune: 411045">
-            <div class="store-card-header">
-              <h3 class="store-card-title">Pune: Balewadi</h3>
-              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
-            </div>
-            <p class="store-card-address-text">Unit no.1 & 101, Nandan Pro Biz, Balewadi, Pune: 411045</p>
-            <div class="store-card-footer">
-              <div class="store-landmark-img">FROOTLE</div>
-              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="stores-carousel-controls">
-          <button class="stores-carousel-button" id="storesPrevious" type="button" disabled>&larr;</button>
-          <div class="carousel-dots" id="storesCarouselDots"></div>
-          <button class="stores-carousel-button" id="storesNext" type="button">&rarr;</button>
         </div>
       </div>
     </div>
@@ -6439,6 +6594,149 @@ document.addEventListener('DOMContentLoaded', function () {
       renderSubmodels(seriesData.n);
       updateCardContent(seriesData.n[0]);
     }
+  }
+
+
+  /* --------------------------------------------------------------------------
+     3. INTERACTIVE PAN-INDIA STORE MAP COMIC SHOWROOM CALLOUTS
+     -------------------------------------------------------------------------- */
+  const showroomComicData = {
+    "Delhi NCR": {
+      city: "Delhi NCR Showrooms (3 Locations)",
+      stores: [
+        { name: "Delhi: Dwarka", address: "Plot no. 66, Sector 12A, Dwarka, Delhi: 110075" },
+        { name: "Gurgaon", address: "Unit: 15/14, OPP. EBD 65, Sector 65, Gurugram: 122102" },
+        { name: "Noida", address: "Unit No. DG 17-19, Spectrum Metro Mall II, Sector 75, Noida: 201301" }
+      ],
+      mapsQuery: "Ecovacs Frootle Experience Store Delhi NCR"
+    },
+    "Mumbai": {
+      city: "Mumbai Showrooms (2 Locations)",
+      stores: [
+        { name: "Mumbai: Ghatkopar", address: "11th Floor, MICL Aaradhya One Earth, Pant Nagar, Ghatkopar East: 400075" },
+        { name: "Mumbai: Borivali", address: "Unit No: 40 & 41, Sheetal Regalia, Borivali East: 400066" }
+      ],
+      mapsQuery: "Ecovacs Frootle Experience Store Mumbai"
+    },
+    "Bangalore": {
+      city: "Bangalore Showrooms (2 Locations)",
+      stores: [
+        { name: "Bangalore: HSR Layout", address: "Plot no 2594, HSR Layout Sector-1, Bangalore: 560041" },
+        { name: "Bangalore: Whitefield", address: "Unit No. 01, GBS Square, Whitefield, Bangalore: 560066" }
+      ],
+      mapsQuery: "Ecovacs Frootle Experience Store Bangalore"
+    },
+    "Pune": {
+      city: "Pune Showrooms (2 Locations)",
+      stores: [
+        { name: "Pune: Viman Nagar", address: "H-11, Solitaire Business Hub, Viman Nagar, Pune: 411014" },
+        { name: "Pune: Balewadi", address: "Unit no.1 & 101, Nandan Pro Biz, Balewadi, Pune: 411045" }
+      ],
+      mapsQuery: "Ecovacs Frootle Experience Store Pune"
+    },
+    "Ahmedabad": {
+      city: "Ahmedabad Showroom",
+      stores: [
+        { name: "Ahmedabad: Bodakdev", address: "Shop No. 7, Shilp Epitome, Bodakdev, Ahmedabad: 380054" }
+      ],
+      mapsQuery: "Ecovacs Frootle Experience Store Bodakdev Ahmedabad"
+    },
+    "Chennai": {
+      city: "Chennai Showroom",
+      stores: [
+        { name: "Chennai: Thoraipakkam", address: "Manor A Block, Rajiv Gandhi Salai, Thoraipakkam, Chennai: 600097" }
+      ],
+      mapsQuery: "Ecovacs Frootle Experience Store Chennai"
+    },
+    "Hyderabad": {
+      city: "Hyderabad Showroom",
+      stores: [
+        { name: "Hyderabad: Gachibowli", address: "Magna Park View towers, Telecom Nagar, Gachibowli, Hyderabad: 500033" }
+      ],
+      mapsQuery: "Ecovacs Frootle Experience Store Hyderabad Gachibowli"
+    }
+  };
+
+  const comicSpeechBubble = document.getElementById('comicSpeechBubble');
+  const closeComicBubble = document.getElementById('closeComicBubble');
+  const comicBubbleCityTitle = document.getElementById('comicBubbleCityTitle');
+  const comicBubbleStoresList = document.getElementById('comicBubbleStoresList');
+  const comicBubbleDirectionsBtn = document.getElementById('comicBubbleDirectionsBtn');
+  const mapHotspotPins = document.querySelectorAll('.map-hotspot-pin');
+
+  function openShowroomComicBubble(pin) {
+    if (!comicSpeechBubble || !pin) return;
+    const cityKey = pin.dataset.city;
+    const data = showroomComicData[cityKey];
+    if (!data) return;
+
+    mapHotspotPins.forEach(p => p.classList.remove('is-active'));
+    pin.classList.add('is-active');
+
+    comicBubbleCityTitle.textContent = data.city;
+    comicBubbleStoresList.innerHTML = data.stores.map(s => `
+      <div class="comic-store-item">
+        <div class="comic-store-name">${s.name}</div>
+        <div class="comic-store-address">${s.address}</div>
+      </div>
+    `).join('');
+
+    if (comicBubbleDirectionsBtn) {
+      comicBubbleDirectionsBtn.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(data.mapsQuery)}`;
+    }
+
+    // Position bubble anchored to clicked pin
+    const pinLeftPercent = parseFloat(pin.style.left) || 50;
+    comicSpeechBubble.style.top = pin.style.top;
+    comicSpeechBubble.style.left = pin.style.left;
+
+    // Boundary edge detection for comic tail
+    if (pinLeftPercent < 35) {
+      comicSpeechBubble.classList.add('tail-left');
+      comicSpeechBubble.classList.remove('tail-right');
+    } else if (pinLeftPercent > 65) {
+      comicSpeechBubble.classList.add('tail-right');
+      comicSpeechBubble.classList.remove('tail-left');
+    } else {
+      comicSpeechBubble.classList.remove('tail-left', 'tail-right');
+    }
+
+    comicSpeechBubble.classList.add('is-visible');
+    comicSpeechBubble.setAttribute('aria-hidden', 'false');
+  }
+
+  function hideShowroomComicBubble() {
+    if (comicSpeechBubble) {
+      comicSpeechBubble.classList.remove('is-visible');
+      comicSpeechBubble.setAttribute('aria-hidden', 'true');
+      mapHotspotPins.forEach(p => p.classList.remove('is-active'));
+    }
+  }
+
+  mapHotspotPins.forEach(pin => {
+    pin.addEventListener('click', function (e) {
+      e.stopPropagation();
+      openShowroomComicBubble(this);
+    });
+  });
+
+  if (closeComicBubble) {
+    closeComicBubble.addEventListener('click', function (e) {
+      e.stopPropagation();
+      hideShowroomComicBubble();
+    });
+  }
+
+  document.addEventListener('click', function (e) {
+    if (comicSpeechBubble && !comicSpeechBubble.contains(e.target) && !e.target.closest('.map-hotspot-pin')) {
+      hideShowroomComicBubble();
+    }
+  });
+
+  // Default display Mumbai comic bubble on initial view
+  const defaultMapPin = document.querySelector('.map-hotspot-pin[data-city="Mumbai"]');
+  if (defaultMapPin) {
+    setTimeout(() => openShowroomComicBubble(defaultMapPin), 600);
   }
 
 });
