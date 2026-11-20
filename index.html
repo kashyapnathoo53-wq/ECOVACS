@@ -2988,6 +2988,380 @@ dialog.ecovacs-modal::backdrop {
   }
 }
 
+
+/* ==========================================================================
+   MOBILE VIEW & RESPONSIVE ENHANCEMENTS
+   ========================================================================== */
+
+/* Mobile Hamburger Toggle */
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  width: 38px;
+  height: 38px;
+  padding: 8px 6px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1002;
+  margin-right: 6px;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--ecovacs-blue);
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+.mobile-menu-toggle.is-active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu-toggle.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.is-active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Nav Drawer Overlay & Panel */
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 15, 25, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 10050;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-nav-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: min(320px, 85vw);
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 10px 0 35px rgba(0, 0, 0, 0.2);
+  z-index: 10051;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-nav-drawer.is-open {
+  transform: translateX(0);
+}
+
+.mobile-nav-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8fafc;
+}
+
+.mobile-nav-close {
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.mobile-nav-links {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-body);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:active {
+  background: var(--ecovacs-blue-light);
+  color: var(--ecovacs-blue);
+}
+
+.mobile-nav-link svg {
+  color: var(--ecovacs-blue);
+  flex-shrink: 0;
+}
+
+.mobile-nav-footer {
+  padding: 16px 20px 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f8fafc;
+}
+
+/* Comparison Swipe Indicator */
+.comparison-swipe-hint {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ecovacs-blue);
+  background: var(--ecovacs-blue-light);
+  padding: 8px 14px;
+  border-radius: 99px;
+  margin: 10px auto 14px;
+  width: fit-content;
+  border: 1px solid rgba(24, 71, 132, 0.2);
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 991px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  nav.main-nav {
+    display: none;
+  }
+
+  .comparison-swipe-hint {
+    display: inline-flex;
+  }
+
+  .catalog-tabs-wrapper {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding: 6px 14px 12px;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .catalog-tabs-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .catalog-tab-btn,
+  .btn-compare-toggle {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    white-space: nowrap;
+  }
+
+  .metrics-switcher-tabs {
+    display: flex;
+  }
+
+  .metrics-content-grid {
+    display: block;
+  }
+
+  .metrics-panel {
+    display: none;
+  }
+
+  .metrics-panel.mobile-active {
+    display: flex;
+  }
+
+  .metrics-panel-heading {
+    display: none;
+  }
+
+  .why-ecovacs-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+  }
+
+  .why-feature-card {
+    flex: 0 0 250px;
+    scroll-snap-align: start;
+  }
+
+  .roi-content-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .store-experience-shell,
+  .sets-us-apart-grid,
+  .asymmetric-container {
+    grid-template-columns: 1fr;
+  }
+
+  .ecovacs-care-grid,
+  .stores-grid-3x3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quiz-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-result-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .accessories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-card-pro {
+    flex: 0 0 100%;
+    max-width: 400px;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  header.site-header {
+    padding: 0 12px;
+  }
+
+  .brand-sub,
+  .brand-divider {
+    display: none;
+  }
+
+  .brand-logo {
+    font-size: 14px;
+  }
+
+  .header-phone-btn {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .header-phone-btn .phone-text {
+    display: none;
+  }
+
+  .header-demo-btn {
+    padding: 6px 12px;
+    font-size: 11px;
+    height: 34px;
+  }
+
+  .btn-cart-drawer-toggle span:not(.cart-badge-count) {
+    display: none;
+  }
+
+  .btn-cart-drawer-toggle {
+    padding: 0 10px;
+  }
+
+  .top-announcement {
+    font-size: 11.5px;
+    padding: 6px 10px;
+    line-height: 1.35;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .stat-item {
+    padding: 10px 6px !important;
+    min-height: 84px !important;
+  }
+
+  .stat-number {
+    font-size: clamp(16px, 4.6vw, 19px) !important;
+  }
+
+  .roi-freq-pills {
+    grid-template-columns: 1fr;
+  }
+
+  .roi-right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .store-city-filter {
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  #storeCityFilter {
+    width: 100%;
+  }
+
+  .stores-grid-3x3 {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-result-right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quiz-result-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .cart-drawer {
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .cart-drawer-footer {
+    padding-bottom: calc(20px + env(safe-area-inset-bottom, 12px));
+  }
+
+  .accessories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -2998,6 +3372,11 @@ dialog.ecovacs-modal::backdrop {
 
 <header class="site-header">
   <div class="brand-group">
+    <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Mobile Navigation Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <a class="brand-logo" href="#top">
       <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
         <rect width="32" height="32" rx="8" fill="#184784"/>
@@ -3012,16 +3391,21 @@ dialog.ecovacs-modal::backdrop {
   <nav class="main-nav" aria-label="Primary Navigation">
     <ul>
       <li><a href="#productCatalog">Products</a></li>
+      <li><a href="#find-my-deebot">Find My DEEBOT</a></li>
       <li><a href="#why-ecovacs">Why Ecovacs</a></li>
       <li><a href="#t-series-features">T-Series 2026</a></li>
       <li><a href="#sets-us-apart">Visit a Store</a></li>
+      <li><a href="#accessories-strip">Accessories</a></li>
       <li><a href="#ecovacs-care">ECOVACS Care</a></li>
     </ul>
   </nav>
 
   <div class="header-actions">
-    <a class="btn-ecovacs btn-ecovacs-outline" href="tel:18002588085">1800 258 8085</a>
-    <a class="btn-ecovacs btn-ecovacs-primary" href="#book-demo-experience">Book Free Demo</a>
+    <a class="btn-ecovacs btn-ecovacs-outline header-phone-btn" href="tel:18002588085" aria-label="Call 1800 258 8085">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="phone-text">1800 258 8085</span>
+    </a>
+    <a class="btn-ecovacs btn-ecovacs-primary header-demo-btn" href="#book-demo-experience">Book Demo</a>
     <button type="button" class="btn-cart-drawer-toggle" id="cartToggleBtn" aria-label="Open Shopping Cart">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
       <span>Cart</span>
@@ -3030,14 +3414,71 @@ dialog.ecovacs-modal::backdrop {
   </div>
 </header>
 
+<!-- MOBILE NAVIGATION DRAWER -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+<aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Drawer">
+  <div class="mobile-nav-header">
+    <div class="brand-group">
+      <svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#184784"/>
+        <circle cx="16" cy="16" r="7" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+      </svg>
+      <span style="font-weight:700;color:var(--ecovacs-blue);font-size:13.5px;">FROOTLE INDIA</span>
+    </div>
+    <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close Mobile Menu">&times;</button>
+  </div>
+  <div class="mobile-nav-links">
+    <a href="#productCatalog" class="mobile-nav-link">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      Products Lineup
+    </a>
+    <a href="#find-my-deebot" class="mobile-nav-link">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      Find My DEEBOT Quiz
+    </a>
+    <a href="#why-ecovacs" class="mobile-nav-link">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      Why Ecovacs
+    </a>
+    <a href="#t-series-features" class="mobile-nav-link">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      T-Series 2026 Showcase
+    </a>
+    <a href="#sets-us-apart" class="mobile-nav-link">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-6-5.33-6-10a6 6 0 0 1 12 0c0 4.67-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg>
+      Visit Experience Center (Map)
+    </a>
+    <a href="#accessories-strip" class="mobile-nav-link">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      Accessories &amp; Spares
+    </a>
+    <a href="#ecovacs-care" class="mobile-nav-link">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      ECOVACS Care
+    </a>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="tel:18002588085" class="btn-ecovacs btn-ecovacs-outline" style="width:100%;justify-content:center;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      1800 258 8085
+    </a>
+    <a href="#book-demo-experience" class="btn-ecovacs btn-ecovacs-primary" style="width:100%;justify-content:center;" onclick="document.getElementById('mobileNavClose').click();">
+      Book Free Demo
+    </a>
+  </div>
+</aside>
+
 <main id="top">
 
   <!-- 1. FULL-WIDTH HERO BANNER -->
   <section class="hero-banner-section">
-    <img class="hero-banner-img"
-         src="https://ecovacsindia.in/images/banner/Ecovacs_D.jpg"
-         onerror="this.onerror=null;this.src='https://ecovacsindia.in/images/banner/Ecovacs_M.jpg';"
-         alt="ECOVACS Robotics Flagship Lineup - Frootle India">
+    <picture>
+      <source media="(max-width: 768px)" srcset="https://ecovacsindia.in/images/banner/Ecovacs_M.jpg">
+      <img class="hero-banner-img"
+           src="https://ecovacsindia.in/images/banner/Ecovacs_D.jpg"
+           onerror="this.onerror=null;this.src='https://ecovacsindia.in/images/banner/Ecovacs_M.jpg';"
+           alt="ECOVACS Robotics Flagship Lineup - Frootle India">
+    </picture>
   </section>
 
   <!-- 2. GLOBAL METRICS & AWARDS SECTION -->
@@ -3857,6 +4298,10 @@ dialog.ecovacs-modal::backdrop {
 
     <!-- SIDE-BY-SIDE SERIES & MODEL COMPARISON MATRIX -->
     <div class="comparison-matrix-wrapper" id="comparisonMatrixWrapper" style="display:none;">
+      <div class="comparison-swipe-hint">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8L22 12L18 16"/><path d="M6 8L2 12L6 16"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+        Swipe horizontally to compare all models &rarr;
+      </div>
       <div class="comparison-matrix-scroll">
         <table class="comparison-table">
           <thead class="comparison-sticky-head">
@@ -5237,6 +5682,65 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateSlots();
   })();
+
+
+  /* --------------------------------------------------------------------------
+     11. MOBILE NAVIGATION DRAWER & TOUCH SWIPE GESTURES
+     -------------------------------------------------------------------------- */
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+  const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+  const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+  const mobileNavClose = document.getElementById('mobileNavClose');
+
+  function openMobileNav() {
+    if (mobileNavDrawer && mobileNavOverlay) {
+      mobileNavDrawer.classList.add('is-open');
+      mobileNavOverlay.classList.add('is-open');
+      if (mobileMenuToggle) mobileMenuToggle.classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeMobileNav() {
+    if (mobileNavDrawer && mobileNavOverlay) {
+      mobileNavDrawer.classList.remove('is-open');
+      mobileNavOverlay.classList.remove('is-open');
+      if (mobileMenuToggle) mobileMenuToggle.classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (mobileMenuToggle) mobileMenuToggle.addEventListener('click', openMobileNav);
+  if (mobileNavClose) mobileNavClose.addEventListener('click', closeMobileNav);
+  if (mobileNavOverlay) mobileNavOverlay.addEventListener('click', closeMobileNav);
+
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', closeMobileNav);
+  });
+
+  // Touch swipe support for semicircular rotating stage on mobile
+  const semicircleStage = document.getElementById('semicircleStage');
+  if (semicircleStage) {
+    let touchStartX = 0;
+    let touchEndX = 0;
+    semicircleStage.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    semicircleStage.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchEndX - touchStartX;
+      if (Math.abs(diff) > 40) {
+        const nextBtn = document.getElementById('rotateRightBtn');
+        const prevBtn = document.getElementById('rotateLeftBtn');
+        if (diff > 0 && prevBtn) {
+          prevBtn.click();
+        } else if (diff < 0 && nextBtn) {
+          nextBtn.click();
+        }
+      }
+    }, { passive: true });
+  }
 
 });
 </script>
