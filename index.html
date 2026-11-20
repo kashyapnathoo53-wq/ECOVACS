@@ -3625,6 +3625,185 @@ dialog.ecovacs-modal::backdrop {
   }
 }
 
+
+/* ==========================================================================
+   MOBILE EXPERIENCE STORE FINDER (COMPACT CITY SELECTOR & ZERO-WASTE PADDING)
+   ========================================================================== */
+.store-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.store-badge-status {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #15803d;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 2px 7px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+.store-card-address-text {
+  font-size: 12px;
+  color: #475569;
+  line-height: 1.45;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.store-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  border-top: 1px solid #f1f5f9;
+  margin-top: auto;
+}
+
+.mobile-store-count {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sets-us-apart-section {
+    padding: 24px 16px 28px !important;
+  }
+
+  .sets-us-apart-subtitle {
+    font-size: 13px !important;
+    line-height: 1.5;
+    margin-bottom: 16px !important;
+    padding: 0 4px;
+  }
+
+  .sets-us-apart-grid {
+    display: block !important;
+    width: 100% !important;
+    gap: 0 !important;
+  }
+
+  /* Hide huge map on mobile to completely prevent lengthy scrolling */
+  .sets-us-apart-grid .map-area {
+    display: none !important;
+  }
+
+  .stores-carousel-container {
+    width: 100% !important;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 14px 16px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  }
+
+  .store-city-filter {
+    display: flex !important;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .store-city-filter::before {
+    content: "📍 Select City to View Stores:";
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ecovacs-blue);
+    display: block;
+  }
+
+  #storeCityFilter {
+    width: 100% !important;
+    height: 46px !important;
+    padding: 0 16px !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    color: #0f172a !important;
+    background-color: #f8fafc !important;
+    border: 2px solid var(--ecovacs-blue) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 6px rgba(0, 86, 179, 0.08);
+  }
+
+  .mobile-store-count {
+    display: block !important;
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+    background: #f1f5f9;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  /* Horizontal touch swipe when all stores are shown (no vertical endless scroll) */
+  .stores-grid-3x3 {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 12px !important;
+    padding-bottom: 10px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .stores-grid-3x3::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .stores-grid-3x3::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+  }
+
+  .store-grid-card {
+    flex: 0 0 85% !important;
+    min-width: 260px !important;
+    max-width: 320px !important;
+    scroll-snap-align: start !important;
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    border-radius: 10px !important;
+    padding: 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  }
+
+  .store-grid-card.is-active-filter {
+    border-color: var(--ecovacs-blue) !important;
+    background: #f8fbff !important;
+  }
+
+  /* When filtered to specific city (1 or 2 stores), stack full-width snugly */
+  .stores-grid-3x3.is-city-filtered {
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-x: visible !important;
+    gap: 12px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .stores-grid-3x3.is-city-filtered .store-grid-card {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: auto !important;
+  }
+
+  .stores-carousel-controls {
+    display: none !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -4206,66 +4385,139 @@ dialog.ecovacs-modal::backdrop {
           </select>
         </div>
 
+        <div class="mobile-store-count" id="mobileStoreCount">📍 12 Experience Centers across India &bull; Swipe to browse or select your city above</div>
         <div class="stores-grid-3x3" id="homeStoresGrid">
           <div class="store-grid-card" data-city="Ahmedabad" data-title="Ahmedabad Experience Store: Bodakdev" data-address="Gr. Floor, Shop No. 7, Shilp Epitome, Bodakdev, Ahmedabad: 380054">
-            <h3 class="store-card-title">Ahmedabad: Bodakdev</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Ahmedabad: Bodakdev</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Gr. Floor, Shop No. 7, Shilp Epitome, Bodakdev, Ahmedabad: 380054</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Bangalore" data-title="Bangalore Experience Store: HSR Layout" data-address="Gr. Floor, Plot no 2594, HSR Layout sector-1, Bangalore: 560041">
-            <h3 class="store-card-title">Bangalore: HSR Layout</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Bangalore: HSR Layout</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Gr. Floor, Plot no 2594, HSR Layout sector-1, Bangalore: 560041</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Bangalore" data-title="Bangalore Experience Store: Whitefield" data-address="Unit No. 01, Gr. Floor, GBS Square, Whitefield, Bangalore: 560066">
-            <h3 class="store-card-title">Bangalore: Whitefield</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Bangalore: Whitefield</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Unit No. 01, Gr. Floor, GBS Square, Whitefield, Bangalore: 560066</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Chennai" data-title="Chennai Experience Store" data-address="Manor A Block, 1st Floor, Rajiv Gandhi Salai, Thoraipakkam, Chennai: 600097">
-            <h3 class="store-card-title">Chennai</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Chennai</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Manor A Block, 1st Floor, Rajiv Gandhi Salai, Thoraipakkam, Chennai: 600097</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Delhi" data-title="Delhi Experience Store: Dwarka" data-address="Plot no. 66, Sector 12A, Dwarka, Delhi: 110075">
-            <h3 class="store-card-title">Delhi: Dwarka</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Delhi: Dwarka</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Plot no. 66, Sector 12A, Dwarka, Delhi: 110075</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Gurgaon" data-title="Gurgaon Experience Store" data-address="Unit: 15/14, OPP. EBD 65, Sector 65, Gurugram: 122102">
-            <h3 class="store-card-title">Gurgaon</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Gurgaon</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Unit: 15/14, OPP. EBD 65, Sector 65, Gurugram: 122102</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Hyderabad" data-title="Hyderabad Experience Store: Gachibowli" data-address="Gr. Floor, Magna Park View towers, Telecom Nagar, Gachibowli, Hyderabad: 500033">
-            <h3 class="store-card-title">Hyderabad: Gachibowli</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Hyderabad: Gachibowli</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Gr. Floor, Magna Park View towers, Telecom Nagar, Gachibowli, Hyderabad: 500033</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Mumbai" data-title="Mumbai Experience Store: Ghatkopar" data-address="11th Floor, MICL Aaradhya One Earth, Pant Nagar, Ghatkopar East, Mumbai: 400075">
-            <h3 class="store-card-title">Mumbai: Ghatkopar</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Mumbai: Ghatkopar</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">11th Floor, MICL Aaradhya One Earth, Pant Nagar, Ghatkopar East, Mumbai: 400075</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Pune" data-title="Pune Experience Store: Viman Nagar" data-address="H-11, Ground Floor, Solitaire Business Hub, Viman Nagar, Pune: 411014">
-            <h3 class="store-card-title">Pune: Viman Nagar</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Pune: Viman Nagar</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">H-11, Ground Floor, Solitaire Business Hub, Viman Nagar, Pune: 411014</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Mumbai" data-title="Mumbai Experience Store: Borivali" data-address="Unit No: 40 & 41, Sheetal Regalia, Borivali East, Mumbai: 400066">
-            <h3 class="store-card-title">Mumbai: Borivali</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Mumbai: Borivali</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Unit No: 40 & 41, Sheetal Regalia, Borivali East, Mumbai: 400066</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Noida" data-title="Noida Experience Store" data-address="Unit No. DG 17-19, Spectrum Metro Mall II, Sector 75, Noida: 201301">
-            <h3 class="store-card-title">Noida</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Noida</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Unit No. DG 17-19, Spectrum Metro Mall II, Sector 75, Noida: 201301</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
           <div class="store-grid-card" data-city="Pune" data-title="Pune Experience Store: Balewadi" data-address="Unit no.1 & 101, Nandan Pro Biz, Balewadi, Pune: 411045">
-            <h3 class="store-card-title">Pune: Balewadi</h3>
-            <div class="store-landmark-img">FROOTLE</div>
-            <span class="click-view-hint">Click for details &rarr;</span>
+            <div class="store-card-header">
+              <h3 class="store-card-title">Pune: Balewadi</h3>
+              <span class="store-badge-status">Open &bull; 10:30 AM - 8:30 PM</span>
+            </div>
+            <p class="store-card-address-text">Unit no.1 & 101, Nandan Pro Biz, Balewadi, Pune: 411045</p>
+            <div class="store-card-footer">
+              <div class="store-landmark-img">FROOTLE</div>
+              <span class="click-view-hint">Details &amp; Demo &rarr;</span>
+            </div>
           </div>
         </div>
 
@@ -5285,6 +5537,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!homeStoresGrid) return;
 
     const normalizedCity = (selectedCity || 'ALL').trim().toLowerCase();
+    const mobileCountEl = document.getElementById('mobileStoreCount');
 
     // 1. Update Map Hotspot Pins active state
     mapHotspotPins.forEach(pin => {
@@ -5326,7 +5579,21 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    // 3. If triggered by clicking on a map pin, smoothly bring the filtered store cards into view
+    // 3. Update mobile layout and status badge
+    if (normalizedCity === 'all') {
+      homeStoresGrid.classList.remove('is-city-filtered');
+      if (mobileCountEl) {
+        mobileCountEl.textContent = '📍 12 Experience Centers across India • Swipe to browse or pick a city above';
+      }
+    } else {
+      homeStoresGrid.classList.add('is-city-filtered');
+      if (mobileCountEl) {
+        const cityName = selectedCity.charAt(0).toUpperCase() + selectedCity.slice(1);
+        mobileCountEl.textContent = `📍 Showing ${matchCount} Experience Store${matchCount > 1 ? 's' : ''} in ${cityName}`;
+      }
+    }
+
+    // 4. If triggered by clicking on a map pin, smoothly bring the filtered store cards into view
     if (triggeredByPin && window.innerWidth <= 991 && homeStoresGrid) {
       homeStoresGrid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
