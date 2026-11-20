@@ -3362,6 +3362,269 @@ dialog.ecovacs-modal::backdrop {
   }
 }
 
+
+/* ==========================================================================
+   ECOVACS SERIES SHOWCASE SECTION (INTERACTIVE EXPLORER)
+   ========================================================================== */
+.series-showcase-section {
+  --bg-page: #ffffff;
+  --bg-surface: #f7f8fa;
+  --bg-pill: #f1f3f6;
+  --text-primary: #111111;
+  --text-secondary: #5a606a;
+  --text-muted: #8a909a;
+  --accent-blue: #0056b3;
+  --accent-blue-soft: rgba(0, 86, 179, 0.08);
+  --border-hairline: #e6e8ec;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --transition: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 56px 24px 64px;
+}
+
+.series-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.series-kicker {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-blue);
+  margin-bottom: 6px;
+}
+
+.series-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.series-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.series-tab-btn {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-pill);
+  border: 1px solid transparent;
+  padding: 9px 22px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.series-tab-btn:hover {
+  color: var(--text-primary);
+  background: #e9ecf1;
+}
+
+.series-tab-btn.active {
+  background: var(--accent-blue);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.18);
+}
+
+.submodel-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 34px;
+  margin-bottom: 22px;
+  transition: opacity var(--transition);
+}
+
+.submodel-bar.hidden {
+  opacity: 0;
+  pointer-events: none;
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+.submodel-btn {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.submodel-btn:hover {
+  color: var(--text-primary);
+}
+
+.submodel-btn.active {
+  color: var(--accent-blue);
+  background: var(--accent-blue-soft);
+  border-color: rgba(0, 86, 179, 0.2);
+}
+
+.showcase-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--bg-page);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  min-height: 410px;
+  transition: opacity 0.22s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.showcase-card.fading {
+  opacity: 0.35;
+}
+
+.showcase-visual {
+  background: var(--bg-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px;
+  position: relative;
+}
+
+.showcase-visual img {
+  max-width: 82%;
+  max-height: 310px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.showcase-card:hover .showcase-visual img {
+  transform: scale(1.02);
+}
+
+.showcase-details {
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.model-tier {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-blue);
+  margin-bottom: 8px;
+}
+
+.model-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.model-desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.spec-list {
+  border-top: 1px solid var(--border-hairline);
+  margin-bottom: 26px;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border-hairline);
+  font-size: 13.5px;
+}
+
+.spec-label {
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.spec-value {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: right;
+}
+
+.showcase-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary-subtle {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  background: var(--accent-blue);
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: background var(--transition);
+}
+
+.btn-primary-subtle:hover {
+  background: #004494;
+}
+
+.btn-link-subtle {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 8px 4px;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.btn-link-subtle:hover {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+@media (max-width: 860px) {
+  .showcase-card {
+    grid-template-columns: 1fr;
+  }
+  .showcase-visual {
+    padding: 28px;
+    min-height: 250px;
+  }
+  .showcase-details {
+    padding: 28px 24px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -4082,81 +4345,58 @@ dialog.ecovacs-modal::backdrop {
     </div>
   </section>
 
-  <!-- 9. SERIES SHOWCASES (16:9 VIDEO LEFT + BENTO IMAGE RIGHT) -->
-  <section class="asymmetric-launch-section">
-    <h2 class="series-section-title">THE N SERIES</h2>
-    <div class="asymmetric-container">
-      <div class="left-horizontal-banner">
-        <video autoplay muted loop playsinline>
-          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/video grid/n30 white.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="right-single-image-banner">
-        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/n30 bento.webp" alt="DEEBOT N SERIES Showcase" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section class="asymmetric-launch-section">
-    <h2 class="series-section-title">ALL NEW T SERIES (2026)</h2>
-    <div class="asymmetric-container">
-      <div class="left-horizontal-banner">
-        <video autoplay muted loop playsinline>
-          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/video grid/t30 e.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="right-single-image-banner">
-        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/t30 e.webp" alt="DEEBOT T30e OMNI Showcase" loading="lazy">
-      </div>
+  <!-- 9. ECOVACS SERIES SHOWCASE (INTERACTIVE LINEUP EXPLORER) -->
+  <section class="series-showcase-section" id="product-series">
+    <div class="series-header">
+      <p class="series-kicker">Explore Lineup</p>
+      <h2 class="series-heading">Engineered for Every Home</h2>
     </div>
 
-    <div class="asymmetric-container">
-      <div class="left-horizontal-banner">
-        <video autoplay muted loop playsinline>
-          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/video grid/t50 s.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="right-single-image-banner">
-        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/t50 bento.webp" alt="DEEBOT T50S PRO OMNI Showcase" loading="lazy">
-      </div>
+    <!-- Series Switcher Pills -->
+    <div class="series-tabs" role="tablist" aria-label="Ecovacs Product Series">
+      <button class="series-tab-btn active" data-series="n" role="tab" aria-selected="true">The N Series</button>
+      <button class="series-tab-btn" data-series="t" role="tab" aria-selected="false">T Series (2025)</button>
+      <button class="series-tab-btn" data-series="x" role="tab" aria-selected="false">X Series (2026)</button>
+      <button class="series-tab-btn" data-series="w" role="tab" aria-selected="false">Window Cleaner</button>
     </div>
 
-    <div class="asymmetric-container">
-      <div class="left-horizontal-banner">
-        <video autoplay muted loop playsinline>
-          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/video grid/t 90.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="right-single-image-banner">
-        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/t90 bento.webp" alt="DEEBOT T90 PRO OMNI Showcase" loading="lazy">
-      </div>
-    </div>
-  </section>
+    <!-- Sub-model Selector (Visible when T Series is active) -->
+    <div class="submodel-bar hidden" id="submodelBar"></div>
 
-  <section class="asymmetric-launch-section">
-    <h2 class="series-section-title">NEXT-GEN X SERIES (2026)</h2>
-    <div class="asymmetric-container">
-      <div class="left-horizontal-banner">
-        <video autoplay muted loop playsinline>
-          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/x12 showcase.mp4" type="video/mp4">
-        </video>
+    <!-- Clean Split Showcase Card -->
+    <div class="showcase-card" id="showcaseCard">
+      <div class="showcase-visual">
+        <img id="modelImage" src="https://ecovacsindia.in/images/product/n30-plus.png" onerror="this.onerror=null;this.src='https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/n30 bento.webp';" alt="DEEBOT N30 PLUS" />
       </div>
-      <div class="right-single-image-banner">
-        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/x12 bento.webp" alt="DEEBOT X12 OmniCyclone Showcase" loading="lazy">
-      </div>
-    </div>
-  </section>
 
-  <section class="asymmetric-launch-section">
-    <h2 class="series-section-title">WINDOW CLEANER (2026)</h2>
-    <div class="asymmetric-container">
-      <div class="left-horizontal-banner">
-        <video autoplay muted loop playsinline>
-          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/winbot_showcase.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="right-single-image-banner">
-        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/winbot bento.webp" alt="ECOVACS WINBOT Showcase" loading="lazy">
+      <div class="showcase-details">
+        <p class="model-tier" id="modelTier">THE N SERIES · EVERYDAY AUTOMATION</p>
+        <h3 class="model-title" id="modelTitle">DEEBOT N30 PLUS</h3>
+        <p class="model-desc" id="modelDesc">Effortless daily vacuuming and mopping powered by precision multi-floor mapping and a compact auto-empty station.</p>
+
+        <div class="spec-list" id="specList">
+          <div class="spec-row">
+            <p class="spec-label">Navigation</p>
+            <p class="spec-value">TrueMapping Multi-Floor</p>
+          </div>
+          <div class="spec-row">
+            <p class="spec-label">Station</p>
+            <p class="spec-value">Auto-Empty Dustbin</p>
+          </div>
+          <div class="spec-row">
+            <p class="spec-label">Mopping</p>
+            <p class="spec-value">OZMO Pro Oscillating Mop</p>
+          </div>
+          <div class="spec-row">
+            <p class="spec-label">Ideal For</p>
+            <p class="spec-value">Apartments &amp; Multi-Level Homes</p>
+          </div>
+        </div>
+
+        <div class="showcase-actions">
+          <a href="#book-demo-experience" class="btn-primary-subtle">Book Free Demo</a>
+          <a href="#comparisonMatrixWrapper" class="btn-link-subtle" onclick="var m = document.getElementById('comparisonMatrixWrapper'); if(m) { m.style.display='block'; m.scrollIntoView({behavior:'smooth'}); }">View Full Specs &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
@@ -5740,6 +5980,206 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     }, { passive: true });
+  }
+
+
+  /* --------------------------------------------------------------------------
+     12. ECOVACS SERIES SHOWCASE LOGIC
+     -------------------------------------------------------------------------- */
+  const seriesData = {
+    n: [
+      {
+        label: "DEEBOT N30 PLUS",
+        tier: "THE N SERIES · EVERYDAY AUTOMATION",
+        title: "DEEBOT N30 PLUS",
+        desc: "Effortless daily vacuuming and mopping powered by precision multi-floor mapping and a compact auto-empty station.",
+        image: "https://ecovacsindia.in/images/product/n30-plus.png",
+        fallback: "https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/n30 bento.webp",
+        specs: [
+          { key: "Navigation", val: "TrueMapping Multi-Floor" },
+          { key: "Station", val: "Auto-Empty Dustbin" },
+          { key: "Mopping", val: "OZMO Pro Oscillating Mop" },
+          { key: "Ideal For", val: "Apartments & Multi-Level Homes" }
+        ]
+      }
+    ],
+    t: [
+      {
+        label: "DEEBOT T50 OMNI",
+        tier: "ALL-NEW T SERIES · 2025",
+        title: "DEEBOT T50 OMNI",
+        desc: "Ultra-slim profile engineered to glide seamlessly beneath low-clearance sofas and beds with consistent downward scrubbing.",
+        image: "https://ecovacsindia.in/images/product/t50-omni.png",
+        fallback: "https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/t50 bento.webp",
+        specs: [
+          { key: "Downward Pressure", val: "7N Constant Scrubbing" },
+          { key: "Chassis Clearance", val: "Ultra-Slim Low-Profile Body" },
+          { key: "Auto Mop Lift", val: "9mm Carpet Protection" },
+          { key: "Station", val: "All-in-One OMNI Self-Cleaning" }
+        ]
+      },
+      {
+        label: "DEEBOT T50 PRO OMNI",
+        tier: "ALL-NEW T SERIES · 2025",
+        title: "DEEBOT T50 PRO OMNI",
+        desc: "Enhanced edge-to-edge cleaning precision with adaptive corner reach and tangle-free brush architecture.",
+        image: "https://ecovacsindia.in/images/product/t50-pro-omni.png",
+        fallback: "https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/t30 e.webp",
+        specs: [
+          { key: "Edge Cleaning", val: "TruEdge Adaptive Extension" },
+          { key: "Anti-Tangle", val: "ZeroTangle Brush System" },
+          { key: "Auto Mop Lift", val: "9mm Carpet Detection" },
+          { key: "Station", val: "Hot-Water Mop Washing & Drying" }
+        ]
+      },
+      {
+        label: "DEEBOT T80 PRO OMNI",
+        tier: "ALL-NEW T SERIES · 2025",
+        title: "DEEBOT T80 PRO OMNI",
+        desc: "High-clearance threshold crossing paired with continuous roller mopping for stubborn kitchen and hallway stains.",
+        image: "https://ecovacsindia.in/images/product/t80-pro-omni.png",
+        fallback: "https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/t90 bento.webp",
+        specs: [
+          { key: "Mop Lift Height", val: "15mm High-Pile Lift" },
+          { key: "Mopping Tech", val: "OZMO Roller Self-Washing" },
+          { key: "Obstacle Avoidance", val: "AIVI 3D Structured Light" },
+          { key: "Station", val: "Fully Automated OMNI Hub" }
+        ]
+      }
+    ],
+    x: [
+      {
+        label: "DEEBOT X8 OMNI",
+        tier: "NEXT-GEN X SERIES · 2026 FLAGSHIP",
+        title: "DEEBOT X8 OMNI",
+        desc: "Flagship suction and pressurized roller mopping built for deep stain removal across hardwood, tile, and thick carpets.",
+        image: "https://ecovacsindia.in/images/product/x8-omni.png",
+        fallback: "https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/x12 bento.webp",
+        specs: [
+          { key: "Mopping Pressure", val: "16x Concentrated Scrub Force" },
+          { key: "Suction System", val: "Flagship Deep-Carpet Suction" },
+          { key: "Mop System", val: "OZMO Roller 3.0 Continuous Clean" },
+          { key: "Navigation", val: "TrueMapping 4.0 + AI Vision" }
+        ]
+      }
+    ],
+    w: [
+      {
+        label: "WINBOT W2 OMNI",
+        tier: "WINDOW CLEANER · 2025",
+        title: "WINBOT W2 OMNI",
+        desc: "Cord-free portable window cleaning station with dual-direction auto-spray for streak-free indoor and balcony glass.",
+        image: "https://ecovacsindia.in/images/product/winbot-w2.png",
+        fallback: "https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/winbot bento.webp",
+        specs: [
+          { key: "Coverage Mode", val: "Any Scenario (Frameless & Framed)" },
+          { key: "Spray System", val: "Three-Nozzle Wide-Angle Atomization" },
+          { key: "Power & Safety", val: "Portable Multi-Function Station" },
+          { key: "Path Planning", val: "WIN-SLAM 4.0 Intelligent Routing" }
+        ]
+      }
+    ]
+  };
+
+  let currentSeries = "n";
+  let currentModelIdx = 0;
+
+  const seriesBtns = document.querySelectorAll(".series-tab-btn");
+  const submodelBar = document.getElementById("submodelBar");
+  const showcaseCard = document.getElementById("showcaseCard");
+  const modelImage = document.getElementById("modelImage");
+  const modelTier = document.getElementById("modelTier");
+  const modelTitle = document.getElementById("modelTitle");
+  const modelDesc = document.getElementById("modelDesc");
+  const specList = document.getElementById("specList");
+
+  function renderSubmodels(models) {
+    if (!submodelBar) return;
+    if (models.length <= 1) {
+      submodelBar.classList.add("hidden");
+      submodelBar.innerHTML = "";
+      return;
+    }
+
+    submodelBar.classList.remove("hidden");
+    submodelBar.innerHTML = models
+      .map(
+        (m, idx) =>
+          `<button type="button" class="submodel-btn ${idx === currentModelIdx ? "active" : ""}" data-idx="${idx}">${m.label}</button>`
+      )
+      .join("");
+
+    submodelBar.querySelectorAll(".submodel-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        currentModelIdx = Number(btn.dataset.idx);
+        renderSubmodels(models);
+        updateCardContent(models[currentModelIdx]);
+      });
+    });
+  }
+
+  function updateCardContent(model) {
+    if (!showcaseCard || !model) return;
+    showcaseCard.classList.add("fading");
+
+    setTimeout(() => {
+      if (modelImage) {
+        modelImage.onerror = function() {
+          this.onerror = null;
+          if (model.fallback) this.src = model.fallback;
+        };
+        modelImage.src = model.image;
+        modelImage.alt = model.title;
+      }
+      if (modelTier) modelTier.textContent = model.tier;
+      if (modelTitle) modelTitle.textContent = model.title;
+      if (modelDesc) modelDesc.textContent = model.desc;
+
+      if (specList) {
+        specList.innerHTML = model.specs
+          .map(
+            (s) => `
+            <div class="spec-row">
+              <p class="spec-label">${s.key}</p>
+              <p class="spec-value">${s.val}</p>
+            </div>`
+          )
+          .join("");
+      }
+
+      showcaseCard.classList.remove("fading");
+    }, 150);
+  }
+
+  if (seriesBtns.length > 0) {
+    seriesBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const selected = btn.dataset.series;
+        if (selected === currentSeries) return;
+
+        seriesBtns.forEach((b) => {
+          b.classList.remove("active");
+          b.setAttribute("aria-selected", "false");
+        });
+        btn.classList.add("active");
+        btn.setAttribute("aria-selected", "true");
+
+        currentSeries = selected;
+        currentModelIdx = 0;
+
+        const models = seriesData[currentSeries];
+        if (models && models.length > 0) {
+          renderSubmodels(models);
+          updateCardContent(models[0]);
+        }
+      });
+    });
+
+    // Initialize default view
+    if (seriesData.n && seriesData.n[0]) {
+      renderSubmodels(seriesData.n);
+      updateCardContent(seriesData.n[0]);
+    }
   }
 
 });
