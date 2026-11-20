@@ -1,0 +1,5070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Ecovacs Smart Robot Vacuums &amp; Cleaners India | Frootle India</title>
+<meta name="description" content="Official Ecovacs Robotics store in India. Explore DEEBOT robotic floor vacuums, WINBOT window cleaners, and GOAT lawn mowers backed by Frootle India.">
+
+<!-- Google Fonts: Poppins (Ecovacs Official) + Plus Jakarta Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  --border: #e2e8f0;
+  --ink: #0b0f19;
+  --ink-body: #334155;
+  --muted: #64748b;
+  --ecovacs-blue: #184784;
+  --ecovacs-blue-hover: #1d5cb0;
+  --ecovacs-blue-light: #e0f2fe;
+  --header-h: 68px;
+  --container: 1240px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+img, video { max-width: 100%; display: block; }
+
+/* ==========================================================================
+   TOP ANNOUNCEMENT & FROOTLE INDIA STICKY HEADER
+   ========================================================================== */
+.top-announcement {
+  background: #343d46;
+  color: #ffffff;
+  text-align: center;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--header-h);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 clamp(16px, 3vw, 40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.brand-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+}
+
+.brand-sub {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ecovacs-blue);
+}
+
+nav.main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+nav.main-nav a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ecovacs-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  transition: opacity 0.2s ease;
+}
+
+nav.main-nav a:hover {
+  opacity: 0.75;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-ecovacs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.btn-ecovacs-primary {
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+}
+
+.btn-ecovacs-primary:hover {
+  background: var(--ecovacs-blue-hover);
+  transform: translateY(-1px);
+}
+
+.btn-ecovacs-outline {
+  background: #ffffff;
+  color: var(--ecovacs-blue);
+  border-color: rgba(24, 71, 132, 0.35);
+}
+
+.btn-ecovacs-outline:hover {
+  background: var(--surface);
+  border-color: var(--ecovacs-blue);
+}
+
+/* ==========================================================================
+   1. FULL-WIDTH HERO BANNER (ECOVACS INDIA STYLE)
+   ========================================================================== */
+.hero-banner-section {
+  position: relative;
+  width: 100%;
+  background: #0b0f19;
+  line-height: 0;
+}
+
+.hero-banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 580px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   2. GLOBAL METRICS & AWARDS SECTION (EXACT 1.35fr / 1fr SPLIT)
+   ========================================================================== */
+.metrics-section {
+  background-color: #ffffff;
+  padding: 24px 20px 18px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.metrics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.metrics-switcher-tabs {
+  display: none;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.metrics-tab-btn {
+  background: #f8f9fa;
+  border: 1px solid rgba(24, 71, 132, 0.2);
+  color: var(--ecovacs-blue);
+  padding: 7px 20px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.metrics-tab-btn.is-active {
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+  border-color: var(--ecovacs-blue);
+}
+
+.metrics-content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.metrics-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.metrics-panel-heading {
+  text-align: center;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metrics-panel-heading h2 {
+  font-size: clamp(16px, 1.4vw, 19px);
+  font-weight: 600;
+  color: var(--ecovacs-blue);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 12px 14px;
+}
+
+.stat-item {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
+  min-height: 94px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(24, 71, 132, 0.08);
+  border-color: rgba(24, 71, 132, 0.35);
+}
+
+.stat-number {
+  font-size: clamp(18px, 1.6vw, 22px);
+  font-weight: 600;
+  color: var(--ecovacs-blue);
+  line-height: 1.1;
+  letter-spacing: -0.4px;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.stat-sub {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.awards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.awards-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.award-badge-card {
+  flex: 0 0 calc((100% - 24px) / 3);
+  max-width: calc((100% - 24px) / 3);
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 12px 8px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 94px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.award-badge-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(24, 71, 132, 0.08);
+  border-color: rgba(24, 71, 132, 0.35);
+}
+
+.award-image {
+  width: 44px;
+  height: 28px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.award-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.award-sub {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+
+/* ==========================================================================
+   2.1 INTERACTIVE COST & TIME SAVINGS CALCULATOR (MAID VS. DEEBOT ROI)
+   ========================================================================== */
+.roi-calculator-section {
+  background-color: #f8fafc;
+  padding: 30px 20px 26px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.roi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.roi-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.roi-pill-tag {
+  display: inline-block;
+  background: var(--ecovacs-blue-light);
+  color: var(--ecovacs-blue);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 4px 14px;
+  border-radius: 99px;
+  margin-bottom: 8px;
+}
+
+.roi-header h2 {
+  font-size: clamp(17px, 1.6vw, 21px);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+}
+
+.roi-header p {
+  font-size: 12.5px;
+  color: var(--muted);
+  max-width: 620px;
+  margin: 4px auto 0;
+}
+
+.roi-content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: stretch;
+}
+
+.roi-left-panel {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 22px 24px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+}
+
+.roi-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.roi-input-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.roi-input-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.roi-input-val-badge {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ecovacs-blue);
+  background: #eff6ff;
+  border: 1px solid rgba(24, 71, 132, 0.2);
+  padding: 2px 10px;
+  border-radius: 99px;
+  font-variant-numeric: tabular-nums;
+}
+
+.roi-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 99px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.roi-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--ecovacs-blue);
+  border: 2.5px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(24, 71, 132, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.roi-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: var(--ecovacs-blue-hover);
+}
+
+.roi-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--ecovacs-blue);
+  border: 2.5px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(24, 71, 132, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.roi-slider-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.roi-freq-pills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.roi-freq-btn {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-body);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.roi-freq-btn:hover {
+  border-color: var(--ecovacs-blue);
+  color: var(--ecovacs-blue);
+}
+
+.roi-freq-btn.is-active {
+  background: var(--ecovacs-blue);
+  border-color: var(--ecovacs-blue);
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(24, 71, 132, 0.25);
+}
+
+.roi-right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.roi-right-panel .stat-item {
+  min-height: 94px;
+  padding: 12px 14px;
+  width: 100%;
+}
+
+.roi-right-panel .stat-number {
+  color: var(--ecovacs-blue);
+  font-size: clamp(20px, 1.8vw, 24px);
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.roi-right-panel .stat-label {
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.roi-right-panel .stat-sub {
+  font-size: 10.5px;
+}
+
+/* ==========================================================================
+   3. WHY ECOVACS ? (EXACT 2-ROW x 5-COLUMN VIDEO CARD GRID FROM SCREENSHOT)
+   ========================================================================== */
+.why-ecovacs-section {
+  background-color: #ffffff;
+  padding: 24px 20px 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-ecovacs-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 18px;
+}
+
+.why-ecovacs-header h2 {
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 600;
+  color: #0a0a0a;
+  letter-spacing: -0.3px;
+}
+
+.why-ecovacs-header p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.why-ecovacs-rails {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.why-ecovacs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.why-feature-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  height: 100%;
+}
+
+.why-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(24, 71, 132, 0.08);
+  border-color: var(--ecovacs-blue);
+}
+
+.why-feature-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #0f172a;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.why-feature-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.why-feature-content {
+  padding: 12px 13px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  background: #ffffff;
+  gap: 5px;
+  text-align: left;
+}
+
+.why-feature-content h3 {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #0a0a0a;
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+}
+
+.why-feature-content p {
+  font-size: 11.2px;
+  color: #555555;
+  line-height: 1.52;
+  font-weight: 400;
+}
+
+/* ==========================================================================
+   4. BOOK YOUR FREE DEMO (3-COLUMN SHOWROOM + CHECKLIST + FORM CARD)
+   ========================================================================== */
+.store-experience-section {
+  background-color: #ffffff;
+  padding: 36px 20px 28px;
+  border-top: 1px solid #eaeaea;
+}
+
+.section-heading-main {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  text-align: center;
+  color: var(--ink);
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.store-experience-shell {
+  width: min(100%, 1240px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.05fr) 310px;
+  align-items: start;
+  gap: clamp(18px, 2.2vw, 32px);
+}
+
+.store-experience-gallery {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.store-experience-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.store-experience-gallery:hover img {
+  transform: scale(1.03);
+}
+
+.store-experience-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 6px;
+}
+
+.store-experience-copy h3 {
+  font-size: clamp(18px, 1.5vw, 22px);
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.store-experience-list {
+  display: grid;
+  gap: 11px;
+  margin-bottom: 20px;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.store-experience-list li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.store-experience-list li::before {
+  content: '\2713';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  border-radius: 50%;
+  background: rgba(24, 71, 132, 0.1);
+  color: var(--ecovacs-blue);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.btn-near-me {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border: 1px solid rgba(24, 71, 132, 0.4);
+  border-radius: 6px;
+  background: rgba(24, 71, 132, 0.05);
+  color: var(--ecovacs-blue);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.25s ease;
+}
+
+.btn-near-me:hover {
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+}
+
+.demo-form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+  border: 1px solid var(--border);
+  width: 100%;
+}
+
+.demo-form-title {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.form-group label {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 34px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--ecovacs-blue);
+  background: #ffffff;
+}
+
+.demo-submit-btn {
+  margin-top: 4px;
+  width: 100%;
+  height: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.demo-submit-btn:hover {
+  background: #103565;
+}
+
+/* ==========================================================================
+   5. EXPERIENCE STORE NEAR YOU (MAP LEFT + 3x3 CAROUSEL RIGHT)
+   ========================================================================== */
+.sets-us-apart-section {
+  background: #ffffff;
+  padding: 24px 20px 32px;
+  border-top: 1px solid #eaeaea;
+}
+
+.sets-us-apart-subtitle {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.sets-us-apart-grid {
+  width: min(100%, 1240px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.25fr);
+  gap: clamp(24px, 3.5vw, 48px);
+  align-items: center;
+}
+
+.map-area {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.map-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+
+.map-interactive-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.map-interactive-wrapper .map-img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Pulsing Hotspot Badges (#184784) */
+.map-hotspot-pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6;
+  outline: none;
+  transition: transform 0.25s ease;
+}
+
+.map-hotspot-pin:focus-visible {
+  outline: 2px solid var(--ecovacs-blue);
+}
+
+.pin-radar {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(24, 71, 132, 0.45);
+  animation: ecovacsHotspotPulse 2s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  pointer-events: none;
+}
+
+.pin-core {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #184784;
+  border: 2.5px solid #ffffff;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease;
+}
+
+.map-hotspot-pin:hover .pin-core,
+.map-hotspot-pin.is-active .pin-core {
+  background: #0f172a;
+  transform: scale(1.3);
+  box-shadow: 0 0 0 3px rgba(24, 71, 132, 0.35), 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.map-hotspot-pin.is-active .pin-radar {
+  animation: ecovacsHotspotPulse 1.2s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  background: rgba(24, 71, 132, 0.7);
+}
+
+@keyframes ecovacsHotspotPulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.pin-tooltip {
+  position: absolute;
+  bottom: calc(100% + 7px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #0f172a;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 99px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 12;
+}
+
+.pin-tooltip span {
+  color: #93c5fd;
+  font-weight: 400;
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+.pin-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px 4px 0 4px;
+  border-style: solid;
+  border-color: #0f172a transparent transparent transparent;
+}
+
+.map-hotspot-pin:hover .pin-tooltip,
+.map-hotspot-pin.is-active .pin-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Active Highlight for Filtered Store Cards */
+.store-grid-card.is-active-filter {
+  border: 2px solid var(--ecovacs-blue) !important;
+  box-shadow: 0 8px 24px rgba(24, 71, 132, 0.22) !important;
+  transform: translateY(-3px);
+  background: #fbfdff;
+}
+
+
+.stores-carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.store-city-filter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#storeCityFilter {
+  padding: 8px 14px;
+  border: 1px solid rgba(24, 71, 132, 0.3);
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #1a1a1a;
+  background: #ffffff;
+  min-width: 170px;
+}
+
+.stores-grid-3x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.store-grid-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 10px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  min-height: 145px;
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.store-grid-card:hover {
+  border-color: var(--ecovacs-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(24, 71, 132, 0.14);
+}
+
+.store-card-title {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.store-landmark-img {
+  width: 68px;
+  height: 68px;
+  background: #eff6ff;
+  border: 1px solid rgba(24, 71, 132, 0.16);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 0;
+  color: var(--ecovacs-blue);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.click-view-hint {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--ecovacs-blue);
+}
+
+.stores-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.stores-carousel-button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.stores-carousel-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 7px;
+}
+
+.carousel-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+  background: var(--ecovacs-blue);
+  width: 22px;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   6. ALL NEW T SERIES (2026) BLUE GRADIENT 4-CARD FEATURE STRIP
+   ========================================================================== */
+.t-series-features-section {
+  background: linear-gradient(180deg, #0560af 0%, #1c79bf 100%);
+  padding: 0 20px 36px;
+}
+
+.t-series-header {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.launch-pill-ribbon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  padding: 6px 24px 8px;
+  border-radius: 0 0 12px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.ribbon-white {
+  background: #ffffff;
+  color: #1570ba;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+.ribbon-blue {
+  background: #1570ba;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(21, 112, 186, 0.28);
+}
+
+.t-series-header h2 {
+  color: #ffffff;
+  font-size: clamp(20px, 2.4vw, 26px);
+  font-weight: 700;
+}
+
+.t-series-features-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.t-series-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.t-series-card:hover {
+  transform: translateY(-4px);
+}
+
+.t-series-media {
+  width: 100%;
+  aspect-ratio: 277 / 204;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+}
+
+.t-series-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.t-series-info {
+  padding-top: 10px;
+}
+
+.t-series-title {
+  color: #ffffff;
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.t-series-subtitle {
+  color: #ffffff;
+  opacity: 0.92;
+  font-size: 11.5px;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   7. NAVIGATION (2-COL) & LARGE HOME / EDGE CLEANING (3-COL) SECTIONS
+   ========================================================================== */
+.navigation-feature-section,
+.series-image-section {
+  background: var(--surface);
+  padding: 0 20px 28px;
+  border-top: 1px solid var(--border);
+}
+
+.feature-sec-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.feature-sec-header h2 {
+  color: var(--ecovacs-blue);
+  font-size: clamp(18px, 2.1vw, 23px);
+  font-weight: 600;
+}
+
+.navigation-feature-grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.navigation-feature-card,
+.series-image-card {
+  background: #ffffff;
+  border: 1px solid #dbe5f0;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(24, 71, 132, 0.06);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.navigation-feature-card:hover,
+.series-image-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--ecovacs-blue);
+}
+
+.navigation-feature-media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.navigation-feature-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navigation-feature-content {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.navigation-feature-content h3 {
+  color: var(--ecovacs-blue);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.series-image-grid {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.series-image-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.series-image-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.series-image-content {
+  padding: 12px 14px 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.series-image-content h3 {
+  color: var(--ecovacs-blue);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.series-image-content p {
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   8. EDITORIAL OZMO ROLLER STAIN REMOVAL STORY
+   ========================================================================== */
+.editorial-story-section {
+  background: #ffffff;
+  padding: 0 20px 28px;
+  border-top: 1px solid var(--border);
+}
+
+.editorial-story-layout {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 460px);
+  gap: clamp(28px, 4vw, 60px);
+  align-items: center;
+}
+
+.editorial-story-copy h2 {
+  color: var(--ecovacs-blue);
+  font-size: clamp(24px, 2.8vw, 34px);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.editorial-story-copy p {
+  color: var(--ink-body);
+  font-size: 15px;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.editorial-story-stats {
+  display: flex;
+  gap: 48px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.editorial-story-stat strong {
+  display: block;
+  color: var(--ecovacs-blue);
+  font-size: clamp(32px, 3.6vw, 44px);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.editorial-story-stat span {
+  display: block;
+  margin-top: 6px;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.editorial-story-media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.editorial-story-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   9. SERIES SHOWCASES: VIDEO LEFT, BENTO IMAGE RIGHT (16:9 EQUAL CARDS)
+   ========================================================================== */
+.asymmetric-launch-section {
+  background-color: #ffffff;
+  padding: 24px 20px 28px;
+  border-top: 1px solid #eaeaea;
+}
+
+.series-section-title {
+  max-width: 1200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  color: var(--ink);
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 600;
+}
+
+.asymmetric-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.asymmetric-container + .asymmetric-container {
+  margin-top: 24px;
+}
+
+.left-horizontal-banner,
+.right-single-image-banner {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.left-horizontal-banner {
+  background: #000000;
+}
+
+.left-horizontal-banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-single-image-banner {
+  background: #ffffff;
+}
+
+.right-single-image-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ==========================================================================
+   10. ECOVACS CARE 4-CARD TRUST SECTION
+   ========================================================================== */
+.ecovacs-care-section {
+  background: var(--surface);
+  padding: 24px 20px 28px;
+  border-top: 1px solid var(--border);
+}
+
+.ecovacs-care-header {
+  max-width: 760px;
+  margin: 0 auto 18px;
+  text-align: center;
+}
+
+.ecovacs-care-header h2 {
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.ecovacs-care-header p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.ecovacs-care-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ecovacs-care-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.ecovacs-care-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(24, 71, 132, 0.4);
+}
+
+.ecovacs-care-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: var(--ecovacs-blue);
+  background: var(--ecovacs-blue-light);
+  border-radius: 50%;
+}
+
+.ecovacs-care-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.ecovacs-care-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.ecovacs-care-card p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   11. OUR CURATED LINEUP (CENTERED 3-COLUMN SERIES ROWS + PRICING MATRIX)
+   ========================================================================== */
+.product-catalog-section {
+  background-color: #ffffff;
+  padding: 28px 20px 56px;
+  border-top: 1px solid #eaeaea;
+  scroll-margin-top: 80px;
+}
+
+.catalog-header {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.catalog-header h2 {
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.catalog-tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.catalog-tab-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: var(--ink);
+  padding: 7px 18px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.catalog-tab-btn.is-active,
+.catalog-tab-btn:hover {
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+  border-color: var(--ecovacs-blue);
+}
+
+.catalog-category-block {
+  max-width: 1240px;
+  margin: 0 auto 14px;
+  scroll-margin-top: 85px;
+}
+
+.catalog-category-header {
+  text-align: center;
+  margin: 22px 0 14px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.catalog-category-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.product-grid-row {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.product-card-pro {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  flex: 0 0 calc((100% - 32px) / 3);
+  max-width: calc((1240px - 32px) / 3);
+  width: 100%;
+}
+
+.product-card-pro:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(24, 71, 132, 0.08);
+  border-color: var(--ecovacs-blue);
+}
+
+.product-thumb-box {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  padding: 8px;
+}
+
+.product-thumb-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.product-card-pro:hover .product-thumb-box img {
+  transform: scale(1.05);
+}
+
+.product-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.product-summary-text {
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.45;
+  min-height: 33px;
+}
+
+.product-price-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 9px 6px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.price-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.price-col:first-child {
+  border-right: 1px solid var(--border);
+}
+
+.price-label {
+  font-size: 9.5px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+}
+
+.price-val {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.price-mrp {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.price-online {
+  color: var(--ecovacs-blue);
+}
+
+.product-actions-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product-actions-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.btn-card-action {
+  width: 100%;
+  padding: 9px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-know-more {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  color: var(--ink-body);
+}
+
+.btn-know-more:hover {
+  border-color: var(--ecovacs-blue);
+  color: var(--ecovacs-blue);
+}
+
+.btn-add-cart {
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+}
+
+.btn-add-cart:hover {
+  background: var(--ecovacs-blue-hover);
+}
+
+.btn-book-demo {
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-book-demo:hover {
+  background: #1e293b;
+}
+
+/* ==========================================================================
+   12. PAN-INDIA OFFICES BANNER & FOOTER
+   ========================================================================== */
+.ecovacs-offices-map-section {
+  background: #ffffff;
+  padding: 24px 16px 32px;
+  border-top: 1px solid var(--border);
+}
+
+.offices-map-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offices-map-img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+footer.site-footer {
+  background: #f1f3f5;
+  border-top: 1px solid var(--border);
+  padding: 36px 20px 24px;
+  color: var(--ink-body);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.footer-inner h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ecovacs-blue);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-inner li,
+.footer-inner p {
+  font-size: 12.5px;
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 16px auto 0;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Modal & Toast */
+dialog.ecovacs-modal {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 440px;
+  width: 92%;
+  margin: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+dialog.ecovacs-modal::backdrop {
+  background: rgba(11, 15, 25, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+.cart-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cart-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .why-ecovacs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product-card-pro {
+    flex: 0 0 calc((100% - 16px) / 2);
+    max-width: calc((100% - 16px) / 2);
+  }
+}
+
+@media (max-width: 991px) {
+  nav.main-nav { display: none; }
+  .metrics-switcher-tabs { display: flex; }
+  .metrics-content-grid { display: block; }
+  .metrics-panel { display: none; }
+  .metrics-panel.mobile-active { display: flex; }
+  .metrics-panel-heading { display: none; }
+
+  .why-ecovacs-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+  }
+  .why-feature-card {
+    flex: 0 0 250px;
+    scroll-snap-align: start;
+  }
+
+    .roi-content-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .store-experience-shell,
+  .sets-us-apart-grid,
+  .asymmetric-container,
+  .editorial-story-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .t-series-features-grid,
+  .ecovacs-care-grid,
+  .stores-grid-3x3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .series-image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card-pro {
+    flex: 0 0 100%;
+    max-width: 400px;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   CART BUTTON BADGE & SLIDE-OVER CART DRAWER
+   ========================================================================== */
+.btn-cart-drawer-toggle {
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 99px;
+  background: var(--ecovacs-blue-light);
+  border: 1px solid rgba(24, 71, 132, 0.25);
+  color: var(--ecovacs-blue);
+  font-family: 'Poppins', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.btn-cart-drawer-toggle:hover {
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+  border-color: var(--ecovacs-blue);
+}
+
+.cart-badge-count {
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-cart-drawer-toggle:hover .cart-badge-count {
+  background: #ffffff;
+  color: var(--ecovacs-blue);
+}
+
+/* Slide-Over Cart Drawer */
+.cart-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 15, 25, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cart-drawer-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(440px, 100%);
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: -8px 0 35px rgba(0, 0, 0, 0.25);
+  z-index: 10001;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cart-drawer.is-open {
+  transform: translateX(0);
+}
+
+.cart-drawer-header {
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+.cart-drawer-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ecovacs-blue);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-drawer-close {
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+}
+
+.cart-drawer-close:hover {
+  color: var(--ink);
+}
+
+.cart-drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cart-empty-state {
+  margin: auto;
+  text-align: center;
+  padding: 40px 10px;
+  color: var(--muted);
+}
+
+.cart-empty-state svg {
+  margin-bottom: 14px;
+  color: #cbd5e1;
+}
+
+.cart-empty-state h4 {
+  font-size: 15px;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.cart-item-row {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.cart-item-row:hover {
+  border-color: rgba(24, 71, 132, 0.3);
+}
+
+.cart-item-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 4px;
+  border: 1px solid var(--border);
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cart-item-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.cart-item-prices {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.cart-item-mrp {
+  text-decoration: line-through;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.cart-item-online {
+  font-weight: 700;
+  color: var(--ecovacs-blue);
+}
+
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.cart-qty-ctrls {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.cart-qty-btn {
+  background: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.cart-qty-btn:hover {
+  background: #f1f5f9;
+}
+
+.cart-qty-num {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 6px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.cart-item-remove {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.cart-drawer-footer {
+  padding: 18px 22px 22px;
+  border-top: 1px solid var(--border);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cart-savings-banner {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-summary-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.cart-summary-total {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  border-top: 1px dashed var(--border);
+  padding-top: 8px;
+  margin-top: 2px;
+}
+
+.cart-summary-total span:last-child {
+  color: var(--ecovacs-blue);
+  font-size: 19px;
+}
+
+.btn-convert-demo {
+  background: #ffffff;
+  border: 1.5px solid var(--ecovacs-blue);
+  color: var(--ecovacs-blue);
+  font-family: 'Poppins', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-convert-demo:hover {
+  background: var(--ecovacs-blue-light);
+}
+
+.btn-checkout-now {
+  background: var(--ecovacs-blue);
+  border: 1.5px solid var(--ecovacs-blue);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-checkout-now:hover {
+  background: var(--ecovacs-blue-hover);
+}
+
+/* ==========================================================================
+   INTERACTIVE "FIND MY DEEBOT" HOME QUIZ (3-STEP SELECTOR)
+   ========================================================================== */
+.home-quiz-section {
+  background: #ffffff;
+  padding: 36px 20px 28px;
+  border-top: 1px solid var(--border);
+}
+
+.home-quiz-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.home-quiz-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.home-quiz-header h2 {
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+}
+
+.home-quiz-header p {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 680px;
+  margin: 6px auto 0;
+}
+
+.quiz-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.quiz-step-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.quiz-step-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ecovacs-blue);
+}
+
+.quiz-step-number {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quiz-pill-btn {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: var(--ink-body);
+  border-radius: 99px;
+  padding: 9px 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-pill-btn:hover {
+  border-color: var(--ecovacs-blue);
+  color: var(--ecovacs-blue);
+  background: #ffffff;
+}
+
+.quiz-pill-btn.is-selected {
+  background: var(--ecovacs-blue);
+  border-color: var(--ecovacs-blue);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(24, 71, 132, 0.22);
+}
+
+.quiz-pill-btn.is-selected::after {
+  content: '✓';
+  font-size: 12px;
+  font-weight: 800;
+  margin-left: 6px;
+}
+
+/* Quiz Recommendation Output Banner */
+.quiz-result-banner {
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+  border: 1.5px solid rgba(24, 71, 132, 0.25);
+  border-radius: 8px;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(24, 71, 132, 0.06);
+}
+
+.quiz-result-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quiz-match-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #10b981;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  width: fit-content;
+}
+
+.quiz-result-model {
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.quiz-result-model span {
+  color: var(--ecovacs-blue);
+}
+
+.quiz-result-fit-reason {
+  font-size: 12.5px;
+  color: var(--ink-body);
+  line-height: 1.5;
+}
+
+.quiz-result-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.quiz-result-thumb {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.quiz-result-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.quiz-result-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.quiz-result-mrp {
+  text-decoration: line-through;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.quiz-result-online {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ecovacs-blue);
+}
+
+.quiz-result-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.quiz-result-actions .btn-card-action {
+  padding: 7px 10px;
+  font-size: 11px;
+}
+
+/* ==========================================================================
+   SIDE-BY-SIDE SERIES & MODEL COMPARISON MATRIX
+   ========================================================================== */
+.btn-compare-toggle {
+  background: #f1f5f9;
+  border: 1.5px solid var(--ecovacs-blue);
+  color: var(--ecovacs-blue);
+  padding: 7px 18px;
+  border-radius: 99px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-compare-toggle:hover,
+.btn-compare-toggle.is-active {
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+}
+
+.comparison-matrix-wrapper {
+  max-width: 1240px;
+  margin: 18px auto 26px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+}
+
+.comparison-matrix-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 980px;
+  font-size: 12.5px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.comparison-table th.spec-label-col,
+.comparison-table td.spec-label-col {
+  text-align: left;
+  font-weight: 600;
+  color: var(--ink);
+  background: #ffffff;
+  width: 220px;
+  min-width: 200px;
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Sticky Comparison Header matching 68px site header */
+.comparison-sticky-head {
+  position: sticky;
+  top: var(--header-h);
+  z-index: 10;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.comparison-sticky-head th {
+  background: #ffffff;
+  height: 68px;
+  padding: 8px 12px;
+}
+
+.comparison-model-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.comparison-model-tier {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--ecovacs-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comparison-model-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.comparison-table tbody tr:nth-child(even) td {
+  background-color: #f8fafc;
+}
+
+.comparison-table tbody tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+.spec-highlight-strong {
+  font-weight: 700;
+  color: var(--ecovacs-blue);
+}
+
+.comparison-action-cell {
+  padding: 14px 10px;
+}
+
+.comparison-action-cell .product-actions-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 130px;
+}
+
+/* ==========================================================================
+   GENUINE ACCESSORIES & CONSUMABLES STRIP
+   ========================================================================== */
+.accessories-section {
+  background: #ffffff;
+  padding: 34px 20px 40px;
+  border-top: 1px solid var(--border);
+}
+
+.accessories-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.accessories-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.accessories-header h2 {
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.accessories-header p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.accessories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* Exact styling of .ecovacs-care-card + accessory attributes */
+.accessory-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.accessory-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(24, 71, 132, 0.4);
+  box-shadow: 0 10px 24px rgba(24, 71, 132, 0.08);
+}
+
+.accessory-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accessory-icon-box {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: var(--ecovacs-blue);
+  background: var(--ecovacs-blue-light);
+  border-radius: 50%;
+}
+
+.accessory-icon-box svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.accessory-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.accessory-card p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.accessory-pricing-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 6px 0 2px;
+}
+
+.accessory-mrp {
+  font-size: 11px;
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.accessory-online {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ecovacs-blue);
+}
+
+.btn-add-accessory {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--ecovacs-blue-light);
+  color: var(--ecovacs-blue);
+  border: 1px solid rgba(24, 71, 132, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-add-accessory:hover {
+  background: var(--ecovacs-blue);
+  color: #ffffff;
+  border-color: var(--ecovacs-blue);
+}
+
+@media (max-width: 991px) {
+  .quiz-steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .quiz-result-banner {
+    grid-template-columns: 1fr;
+  }
+  .accessories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .accessories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="top-announcement">
+  Want a Better Price? Just call us on <strong>1800 258 8085</strong> or Visit our Frootle Experience Store
+</div>
+
+<header class="site-header">
+  <div class="brand-group">
+    <a class="brand-logo" href="#top">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#184784"/>
+        <circle cx="16" cy="16" r="7" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+      </svg>
+      FROOTLE INDIA
+    </a>
+    <div class="brand-divider"></div>
+    <span class="brand-sub">ECOVACS Official</span>
+  </div>
+
+  <nav class="main-nav" aria-label="Primary Navigation">
+    <ul>
+      <li><a href="#productCatalog">Products</a></li>
+      <li><a href="#why-ecovacs">Why Ecovacs</a></li>
+      <li><a href="#t-series-features">T-Series 2026</a></li>
+      <li><a href="#sets-us-apart">Visit a Store</a></li>
+      <li><a href="#ecovacs-care">ECOVACS Care</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions">
+    <a class="btn-ecovacs btn-ecovacs-outline" href="tel:18002588085">1800 258 8085</a>
+    <a class="btn-ecovacs btn-ecovacs-primary" href="#book-demo-experience">Book Free Demo</a>
+    <button type="button" class="btn-cart-drawer-toggle" id="cartToggleBtn" aria-label="Open Shopping Cart">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+      <span>Cart</span>
+      <span class="cart-badge-count" id="cartBadgeCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1. FULL-WIDTH HERO BANNER -->
+  <section class="hero-banner-section">
+    <img class="hero-banner-img"
+         src="https://ecovacsindia.in/images/banner/Ecovacs_D.jpg"
+         onerror="this.onerror=null;this.src='https://ecovacsindia.in/images/banner/Ecovacs_M.jpg';"
+         alt="ECOVACS Robotics Flagship Lineup - Frootle India">
+  </section>
+
+  <!-- 2. GLOBAL METRICS & AWARDS SECTION -->
+  <section class="metrics-section">
+    <div class="metrics-container">
+      <div class="metrics-switcher-tabs">
+        <button type="button" class="metrics-tab-btn is-active" data-metrics-target="statsPanel">Global Footprints</button>
+        <button type="button" class="metrics-tab-btn" data-metrics-target="awardsPanel">Awards and Certifications</button>
+      </div>
+
+      <div class="metrics-content-grid">
+        <div class="metrics-panel mobile-active" id="statsPanel">
+          <div class="metrics-panel-heading">
+            <h2>Global Footprints</h2>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">400,000,000</div>
+              <div class="stat-label">YIKO Voice Interaction</div>
+              <div class="stat-sub">Exceeds 400 Million Uses</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">38,000,000</div>
+              <div class="stat-label">Households Worldwide</div>
+              <div class="stat-sub">Recognized &amp; Beloved</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">180</div>
+              <div class="stat-label">Countries &amp; Regions</div>
+              <div class="stat-sub">Global Worldwide Reach</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1.1B</div>
+              <div class="stat-label">Hours Saved</div>
+              <div class="stat-sub">For Global DEEBOT Users</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1.6B</div>
+              <div class="stat-label">Accumulated Cleanings</div>
+              <div class="stat-sub">Performed Globally</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">#1</div>
+              <div class="stat-label">Market Leader</div>
+              <div class="stat-sub">Smart Robotics Innovation</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="metrics-panel" id="awardsPanel">
+          <div class="metrics-panel-heading">
+            <h2>Awards | Certifications</h2>
+          </div>
+          <div class="awards-container">
+            <div class="awards-row">
+              <div class="award-badge-card">
+                <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/awards/red%20dot.svg" alt="Red Dot Design" class="award-image" loading="lazy">
+                <div class="award-title">Red Dot Design</div>
+                <div class="award-sub">Winner 2025</div>
+              </div>
+              <div class="award-badge-card">
+                <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/awards/IF%20Design%20spark%20awards.png" alt="iF Design Award" class="award-image" loading="lazy">
+                <div class="award-title">iF Design Award</div>
+                <div class="award-sub">Product Excellence</div>
+              </div>
+              <div class="award-badge-card">
+                <img src="https://www.dexigner.com/images/directory/xxi/5505.jpg" alt="IDEA DESIGN AWARD" class="award-image" loading="lazy">
+                <div class="award-title">IDEA DESIGN AWARD</div>
+                <div class="award-sub">Design Excellence</div>
+              </div>
+            </div>
+            <div class="awards-row">
+              <div class="award-badge-card">
+                <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/awards/T%C3%9CV%20Rheinland%20Privacy%20Certified.png" alt="TÜV Rheinland" class="award-image" loading="lazy">
+                <div class="award-title">TÜV Rheinland</div>
+                <div class="award-sub">Privacy &amp; Safety</div>
+              </div>
+              <div class="award-badge-card">
+                <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/awards/ISO.png" alt="ISO 9001:2015" class="award-image" loading="lazy">
+                <div class="award-title">ISO 9001:2015</div>
+                <div class="award-sub">Certified Quality</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 2.1 INTERACTIVE COST & TIME SAVINGS CALCULATOR (MAID VS. DEEBOT ROI) -->
+  <section class="roi-calculator-section" id="roi-calculator">
+    <div class="roi-container">
+      <div class="roi-header">
+        <span class="roi-pill-tag">Smart Investment ROI</span>
+        <h2>Maid vs. DEEBOT Cost &amp; Time Savings Calculator</h2>
+        <p>Calculate your annual savings, rapid payback period, and valuable personal hours reclaimed each year.</p>
+      </div>
+
+      <div class="roi-content-grid">
+        <!-- Left Panel (Sliders & Controls) -->
+        <div class="roi-left-panel">
+          <!-- Home Area Slider -->
+          <div class="roi-input-group">
+            <div class="roi-input-header">
+              <label for="homeAreaSlider" class="roi-input-label">Home Area</label>
+              <div class="roi-input-val-badge"><span id="homeAreaVal">1,800</span> sq. ft.</div>
+            </div>
+            <input type="range" id="homeAreaSlider" class="roi-slider" min="800" max="5000" step="50" value="1800" aria-label="Home Area Slider (800 to 5000 sq ft)">
+            <div class="roi-slider-scale">
+              <span>800 sq. ft.</span>
+              <span>2,500 sq. ft.</span>
+              <span>5,000 sq. ft.</span>
+            </div>
+          </div>
+
+          <!-- Cleaning Frequency Toggle -->
+          <div class="roi-input-group">
+            <div class="roi-input-header">
+              <span class="roi-input-label">Cleaning Frequency</span>
+              <span style="font-size:11px;color:var(--muted);font-weight:500;">Automated schedule</span>
+            </div>
+            <div class="roi-freq-pills">
+              <button type="button" class="roi-freq-btn is-active" data-freq="1">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Daily (1x / day)
+              </button>
+              <button type="button" class="roi-freq-btn" data-freq="2">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-2 2.5h3L11 8"/><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Twice Daily (2x / day)
+              </button>
+            </div>
+          </div>
+
+          <!-- Monthly Domestic Help Expense Slider -->
+          <div class="roi-input-group">
+            <div class="roi-input-header">
+              <label for="maidExpenseSlider" class="roi-input-label">Current Domestic Help Expense</label>
+              <div class="roi-input-val-badge">₹<span id="maidExpenseVal">4,500</span> / month</div>
+            </div>
+            <input type="range" id="maidExpenseSlider" class="roi-slider" min="2000" max="10000" step="250" value="4500" aria-label="Current Monthly Domestic Help / Cleaning Expense">
+            <div class="roi-slider-scale">
+              <span>₹2,000/mo</span>
+              <span>₹6,000/mo</span>
+              <span>₹10,000/mo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Panel (Live Output Cards matching .stat-item, min-height: 94px) -->
+        <div class="roi-right-panel">
+          <div class="stat-item roi-stat-card">
+            <div class="stat-number" id="roiAnnualSavings">₹51,600</div>
+            <div class="stat-label">Annual Net Savings</div>
+            <div class="stat-sub">Direct reduction in domestic cleaning bills</div>
+          </div>
+
+          <div class="stat-item roi-stat-card">
+            <div class="stat-number" id="roiPaybackPeriod">9.3 Months</div>
+            <div class="stat-label">Payback Period</div>
+            <div class="stat-sub">100% Capital Recovery in Under a Year</div>
+          </div>
+
+          <div class="stat-item roi-stat-card">
+            <div class="stat-number" id="roiHoursSaved">340 Hours/yr</div>
+            <div class="stat-label">Hours Saved per Year</div>
+            <div class="stat-sub">Synced with ECOVACS 1.1B+ Global Hours Saved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. WHY ECOVACS ? (DUAL 5-COLUMN VIDEO GRID MATCHING REFERENCE IMAGE) -->
+  <section class="why-ecovacs-section" id="why-ecovacs">
+    <div class="why-ecovacs-header">
+      <h2>Why Ecovacs ?</h2>
+      <p>Advanced | Powerful | Effortless</p>
+    </div>
+
+    <div class="why-ecovacs-rails">
+      <!-- Top Row: 5 Cards -->
+      <div class="why-ecovacs-grid">
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/features/mapping 4.0.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>Mapping 4.0</h3>
+            <p>Advanced LiDAR 4.0 with Quick Mapping – Maps 1000-1500 sq. ft. home in just 10-15 mins. Saves maps for multiple floors &amp; smartly avoids obstacles to plan the most effective cleaning path.</p>
+          </div>
+        </article>
+
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/features/strong suction.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>Strong Suction</h3>
+            <p>Powerful 30,000Pa suction picks up all kinds of dust, dirt, crumbs &amp; hair from all types of hard floors (Tiles, Marble, Wood Flooring, Carpets). Enjoy a deeper cleaning experience without needing to vacuum manually.</p>
+          </div>
+        </article>
+
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/features/zero tangle.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>Zero Tangle 4.0</h3>
+            <p>Patented V-shaped comb technology along with Cyclone Suction of dust ensures 0% Hair Tangling. Saves all your time of maintaining your product &amp; keep the Deebot clean for next use.</p>
+          </div>
+        </article>
+
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/features/truedge 3.0.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>TruEdge 3.0</h3>
+            <p>Only brand to deliver 100% edge-to-edge cleaning, No dust line left. Its air-cushion roller glides along walls without scratching furniture.</p>
+          </div>
+        </article>
+
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/features/smart app.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>SMART App control</h3>
+            <p>Control your Ecovacs Robot from multiple devices, wherever you are in the world. Start the cleaning and come back to a cleaner home, even when you’re away.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Bottom Row: 5 Cards -->
+      <div class="why-ecovacs-grid">
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/AIVI 3D.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>AIVI 3D Obstacle Avoidance</h3>
+            <p>Only Brand with most advanced AIVI 3D Obstacle Avoidance Technology, designed to detect even the smallest obstacle &amp; intelligently navigate cleaning around them. Ensuring smoother, faster &amp; effective cleaning.</p>
+          </div>
+        </article>
+
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/features/ozmo roller.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>OZMO Roller Mopping</h3>
+            <p>Patented OZMO Roller Mopping delivers high pressure on hard floor to remove tough stains such as dry coffee/tea liquid, oil etc. It is Specially Designed for Indian house mopping preferences, delivering a powerful and effective cleaning experience.</p>
+          </div>
+        </article>
+
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/features/OMNI STATION.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>All-in-One OMNI Station</h3>
+            <p>Enjoy complete peace of mind. It auto-empties dust in dust bag, Re-fills clean water, Washes the mop pads &amp; dries them with hot air for No Odor &amp; Hygienic cleaning, ensuring better cleaning. Near Zero Maintenance &amp; minimal human intervention.</p>
+          </div>
+        </article>
+
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/features/charging.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>Power Boost Technology</h3>
+            <p>Only Robot Vacuum Cleaner with Patented Power Boost Technology which charges 10% battery every 3 mins. Ensuring up to 10,000 sqft area on a single battery run, making it ideal for larger homes and spaces.</p>
+          </div>
+        </article>
+
+        <article class="why-feature-card">
+          <div class="why-feature-media">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/features/YIKO.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="why-feature-content">
+            <h3>YIKO Voice Assistant</h3>
+            <p>Make your robot feel like a friend at home. Talk to it directly and simply tell it what and where to clean from under the sofa to any part of your home. Just give the command, and let your robot take care of the rest.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. BOOK YOUR FREE DEMO (3-COLUMN SHOWROOM + CHECKLIST + FORM) -->
+  <section class="store-experience-section" id="book-demo-experience">
+    <h2 class="section-heading-main">Book your Free Demo</h2>
+    <div class="store-experience-shell">
+      <div class="store-experience-gallery">
+        <img src="https://d395gc8g8y2jw4.cloudfront.net/Map.webp?ver=1"
+             onerror="this.onerror=null;this.src='https://frootleindia.com/storage/v1/object/public/site-images/store/Mumbai.webp';"
+             alt="Frootle India & ECOVACS Experience Center" loading="lazy">
+      </div>
+
+      <div class="store-experience-copy">
+        <h3>Experience Before you buy</h3>
+        <ul class="store-experience-list">
+          <li>Experience the complete range.</li>
+          <li>Personal Guidance to select right product for you.</li>
+          <li>Guaranteed Lowest Price.</li>
+        </ul>
+        <button type="button" class="btn-near-me" onclick="document.getElementById('sets-us-apart').scrollIntoView({behavior:'smooth'})">
+          Find Store Near Me / View Map
+        </button>
+      </div>
+
+      <div class="demo-form-card">
+        <h3 class="demo-form-title">Schedule Demo</h3>
+        <form id="scheduleDemoForm" class="demo-form">
+          <div class="form-group">
+            <label for="demoName">Name</label>
+            <input type="text" id="demoName" placeholder="Eg. Manish Kumar Mishra" required>
+          </div>
+          <div class="form-group">
+            <label for="demoPhone">Contact Number</label>
+            <input type="tel" id="demoPhone" placeholder="Eg. 9876543210" pattern="[0-9]{10}" maxlength="10" required>
+          </div>
+          <div class="form-group">
+            <label for="demoLocation">Location</label>
+            <select id="demoLocation" required>
+              <option value="" disabled selected>Select Your City</option>
+              <option>Ahmedabad</option>
+              <option>Bangalore</option>
+              <option>Chennai</option>
+              <option>Coimbatore</option>
+              <option>Delhi</option>
+              <option>Gurgaon</option>
+              <option>Hyderabad</option>
+              <option>Indore</option>
+              <option>Jaipur</option>
+              <option>Kochi</option>
+              <option>Lucknow</option>
+              <option>Mohali</option>
+              <option>Mumbai</option>
+              <option>Nagpur</option>
+              <option>Nashik</option>
+              <option>Noida</option>
+              <option>Pune</option>
+              <option>Surat</option>
+              <option>Thane</option>
+              <option>Trivandrum</option>
+              <option>Vadodara</option>
+              <option>Vijayawada</option>
+              <option>Visakhapatnam</option>
+              <option value="Other - Virtual Demo">Other (Online / Virtual Demo)</option>
+            </select>
+          </div>
+          <button type="submit" class="demo-submit-btn">Book My Demo</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. EXPERIENCE STORE NEAR YOU (PAN-INDIA MAP + 3x3 STORE CAROUSEL) -->
+  <section id="sets-us-apart" class="sets-us-apart-section">
+    <p class="sets-us-apart-subtitle">Visit our exclusive Frootle India Experience Stores for live product demonstrations and expert guidance.</p>
+
+    <div class="sets-us-apart-grid">
+      <div class="map-area">
+        <h3 class="map-heading">Frootle India Experience Store</h3>
+        <div class="map-interactive-wrapper" id="storeMapHotspotContainer">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/assets/Ecovacs Frootle Store Map (1).png"
+               class="map-img" alt="Frootle India Experience Stores Map" loading="lazy">
+
+          <!-- Pulsing Map Pin Hotspots (#184784) -->
+          <!-- Delhi NCR -->
+          <button type="button" class="map-hotspot-pin" data-city="Delhi NCR" style="top: 29%; left: 47%;" aria-label="Delhi NCR Experience Stores">
+            <span class="pin-radar"></span>
+            <span class="pin-core"></span>
+            <span class="pin-tooltip">Delhi NCR <span>(3 Stores)</span></span>
+          </button>
+
+          <!-- Ahmedabad -->
+          <button type="button" class="map-hotspot-pin" data-city="Ahmedabad" style="top: 48%; left: 28%;" aria-label="Ahmedabad Experience Stores">
+            <span class="pin-radar"></span>
+            <span class="pin-core"></span>
+            <span class="pin-tooltip">Ahmedabad <span>(1 Store)</span></span>
+          </button>
+
+          <!-- Mumbai -->
+          <button type="button" class="map-hotspot-pin" data-city="Mumbai" style="top: 61%; left: 29%;" aria-label="Mumbai Experience Stores">
+            <span class="pin-radar"></span>
+            <span class="pin-core"></span>
+            <span class="pin-tooltip">Mumbai <span>(2 Stores)</span></span>
+          </button>
+
+          <!-- Pune -->
+          <button type="button" class="map-hotspot-pin" data-city="Pune" style="top: 66%; left: 34%;" aria-label="Pune Experience Stores">
+            <span class="pin-radar"></span>
+            <span class="pin-core"></span>
+            <span class="pin-tooltip">Pune <span>(2 Stores)</span></span>
+          </button>
+
+          <!-- Hyderabad -->
+          <button type="button" class="map-hotspot-pin" data-city="Hyderabad" style="top: 66%; left: 52%;" aria-label="Hyderabad Experience Stores">
+            <span class="pin-radar"></span>
+            <span class="pin-core"></span>
+            <span class="pin-tooltip">Hyderabad <span>(1 Store)</span></span>
+          </button>
+
+          <!-- Bangalore -->
+          <button type="button" class="map-hotspot-pin" data-city="Bangalore" style="top: 79%; left: 46%;" aria-label="Bangalore Experience Stores">
+            <span class="pin-radar"></span>
+            <span class="pin-core"></span>
+            <span class="pin-tooltip">Bangalore <span>(2 Stores)</span></span>
+          </button>
+
+          <!-- Chennai -->
+          <button type="button" class="map-hotspot-pin" data-city="Chennai" style="top: 80%; left: 59%;" aria-label="Chennai Experience Stores">
+            <span class="pin-radar"></span>
+            <span class="pin-core"></span>
+            <span class="pin-tooltip">Chennai <span>(1 Store)</span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="stores-carousel-container">
+        <div class="store-city-filter">
+          <select id="storeCityFilter" aria-label="Select City Filter">
+            <option value="ALL">All Cities</option>
+            <option value="Delhi NCR">Delhi NCR (Delhi, Gurgaon, Noida)</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Gurgaon">Gurgaon</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Kochi">Kochi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Noida">Noida</option>
+            <option value="Pune">Pune</option>
+            <option value="Surat">Surat</option>
+            <option value="Thane">Thane</option>
+            <option value="Vadodara">Vadodara</option>
+          </select>
+        </div>
+
+        <div class="stores-grid-3x3" id="homeStoresGrid">
+          <div class="store-grid-card" data-city="Ahmedabad" data-title="Ahmedabad Experience Store: Bodakdev" data-address="Gr. Floor, Shop No. 7, Shilp Epitome, Bodakdev, Ahmedabad: 380054">
+            <h3 class="store-card-title">Ahmedabad: Bodakdev</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Bangalore" data-title="Bangalore Experience Store: HSR Layout" data-address="Gr. Floor, Plot no 2594, HSR Layout sector-1, Bangalore: 560041">
+            <h3 class="store-card-title">Bangalore: HSR Layout</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Bangalore" data-title="Bangalore Experience Store: Whitefield" data-address="Unit No. 01, Gr. Floor, GBS Square, Whitefield, Bangalore: 560066">
+            <h3 class="store-card-title">Bangalore: Whitefield</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Chennai" data-title="Chennai Experience Store" data-address="Manor A Block, 1st Floor, Rajiv Gandhi Salai, Thoraipakkam, Chennai: 600097">
+            <h3 class="store-card-title">Chennai</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Delhi" data-title="Delhi Experience Store: Dwarka" data-address="Plot no. 66, Sector 12A, Dwarka, Delhi: 110075">
+            <h3 class="store-card-title">Delhi: Dwarka</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Gurgaon" data-title="Gurgaon Experience Store" data-address="Unit: 15/14, OPP. EBD 65, Sector 65, Gurugram: 122102">
+            <h3 class="store-card-title">Gurgaon</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Hyderabad" data-title="Hyderabad Experience Store: Gachibowli" data-address="Gr. Floor, Magna Park View towers, Telecom Nagar, Gachibowli, Hyderabad: 500033">
+            <h3 class="store-card-title">Hyderabad: Gachibowli</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Mumbai" data-title="Mumbai Experience Store: Ghatkopar" data-address="11th Floor, MICL Aaradhya One Earth, Pant Nagar, Ghatkopar East, Mumbai: 400075">
+            <h3 class="store-card-title">Mumbai: Ghatkopar</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Pune" data-title="Pune Experience Store: Viman Nagar" data-address="H-11, Ground Floor, Solitaire Business Hub, Viman Nagar, Pune: 411014">
+            <h3 class="store-card-title">Pune: Viman Nagar</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Mumbai" data-title="Mumbai Experience Store: Borivali" data-address="Unit No: 40 & 41, Sheetal Regalia, Borivali East, Mumbai: 400066">
+            <h3 class="store-card-title">Mumbai: Borivali</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Noida" data-title="Noida Experience Store" data-address="Unit No. DG 17-19, Spectrum Metro Mall II, Sector 75, Noida: 201301">
+            <h3 class="store-card-title">Noida</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+          <div class="store-grid-card" data-city="Pune" data-title="Pune Experience Store: Balewadi" data-address="Unit no.1 & 101, Nandan Pro Biz, Balewadi, Pune: 411045">
+            <h3 class="store-card-title">Pune: Balewadi</h3>
+            <div class="store-landmark-img">FROOTLE</div>
+            <span class="click-view-hint">Click for details &rarr;</span>
+          </div>
+        </div>
+
+        <div class="stores-carousel-controls">
+          <button class="stores-carousel-button" id="storesPrevious" type="button" disabled>&larr;</button>
+          <div class="carousel-dots" id="storesCarouselDots"></div>
+          <button class="stores-carousel-button" id="storesNext" type="button">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ALL NEW T SERIES (2026) BLUE GRADIENT 4-CARD SHOWCASE -->
+  <section class="t-series-features-section" id="t-series-features">
+    <div class="t-series-header">
+      <span class="launch-pill-ribbon ribbon-white">NEW LAUNCH 2026 | ALL NEW T SERIES</span>
+      <h2>The Future of Cleaning Starts Now</h2>
+    </div>
+
+    <div class="t-series-features-grid">
+      <article class="t-series-card">
+        <div class="t-series-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/The Future of Cleaning/1.webp" alt="30,000Pa BLAST Suction" loading="lazy">
+        </div>
+        <div class="t-series-info">
+          <h3 class="t-series-title">30,000Pa BLAST Suction</h3>
+          <p class="t-series-subtitle">Leave No Dirt Behind</p>
+        </div>
+      </article>
+
+      <article class="t-series-card">
+        <div class="t-series-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/The Future of Cleaning/2.webp" alt="3D AIVI TrueMapping 4.0" loading="lazy">
+        </div>
+        <div class="t-series-info">
+          <h3 class="t-series-title">3D AIVI TrueMapping 4.0</h3>
+          <p class="t-series-subtitle">Fast Mapping &amp; Intelligent Path Planning</p>
+        </div>
+      </article>
+
+      <article class="t-series-card">
+        <div class="t-series-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/The Future of Cleaning/3.webp" alt="ZeroTangle 4.0" loading="lazy">
+        </div>
+        <div class="t-series-info">
+          <h3 class="t-series-title">ZeroTangle 4.0</h3>
+          <p class="t-series-subtitle">Remove hair without wrapping</p>
+        </div>
+      </article>
+
+      <article class="t-series-card">
+        <div class="t-series-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/The Future of Cleaning/4.webp" alt="The All-in-One Station" loading="lazy">
+        </div>
+        <div class="t-series-info">
+          <h3 class="t-series-title">The All-in-One Station</h3>
+          <p class="t-series-subtitle">120 Days of Hand Free Cleaning</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 7. NAVIGATION (2-COL) + LARGE HOME (3-COL) + EDGE CLEANING (3-COL) -->
+  <section class="navigation-feature-section">
+    <div class="feature-sec-header">
+      <span class="launch-pill-ribbon ribbon-blue">NEW LAUNCH 2026 | ALL NEW T SERIES</span>
+      <h2>Advanced Mapping &amp; 3D Obstacle Avoidance for Precise Navigation</h2>
+    </div>
+    <div class="navigation-feature-grid">
+      <article class="navigation-feature-card">
+        <div class="navigation-feature-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/MAPPING/3D AIVI TrueMapping 4.0.webp" alt="TrueMapping 4.0" loading="lazy">
+        </div>
+        <div class="navigation-feature-content">
+          <h3>TrueMapping 4.0</h3>
+        </div>
+      </article>
+      <article class="navigation-feature-card">
+        <div class="navigation-feature-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/MAPPING/Intelligent Obstacle Avoidance.webp" alt="Obstacle Avoidance" loading="lazy">
+        </div>
+        <div class="navigation-feature-content">
+          <h3>Obstacle Avoidance</h3>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="series-image-section">
+    <div class="feature-sec-header">
+      <span class="launch-pill-ribbon ribbon-blue">NEW LAUNCH 2026 | ALL NEW T SERIES</span>
+      <h2>For Large Home Cleaning</h2>
+    </div>
+    <div class="series-image-grid">
+      <article class="series-image-card">
+        <div class="series-image-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/For Large Home Cleaning/1.webp" alt="4000 mAh battery" loading="lazy">
+        </div>
+        <div class="series-image-content">
+          <h3>4000 mAh battery</h3>
+          <p>Continuous uninterrupted 5500+ sq. ft. whole-home deep cleaning with intelligent breakpoint auto-resumption.</p>
+        </div>
+      </article>
+      <article class="series-image-card">
+        <div class="series-image-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/For Large Home Cleaning/2.webp" alt="40mm Threshold Climbing" loading="lazy">
+        </div>
+        <div class="series-image-content">
+          <h3>40mm Threshold Climbing</h3>
+          <p>Effortless high-traction obstacle climb across door thresholds, thick plush carpet edges, and room dividers.</p>
+        </div>
+      </article>
+      <article class="series-image-card">
+        <div class="series-image-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/For Large Home Cleaning/3.webp" alt="YIKO AI Experience" loading="lazy">
+        </div>
+        <div class="series-image-content">
+          <h3>YIKO AI Experience</h3>
+          <p>Direct natural language voice command execution with multi-room sound source localization and zero-touch control.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="series-image-section">
+    <div class="feature-sec-header">
+      <span class="launch-pill-ribbon ribbon-blue">NEW LAUNCH 2026 | ALL NEW T SERIES</span>
+      <h2>Flawless Clean for Every Edge and Corner</h2>
+    </div>
+    <div class="series-image-grid">
+      <article class="series-image-card">
+        <div class="series-image-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/For Large Home Cleaning/4.webp" alt="TruEdge 3.0 Edge Cleaning" loading="lazy">
+        </div>
+        <div class="series-image-content">
+          <h3>TruEdge 3.0 Edge Cleaning</h3>
+          <p>Adaptive mop arm extends with 1mm proximity along walls, baseboards &amp; deep 90° room corners.</p>
+        </div>
+      </article>
+      <article class="series-image-card">
+        <div class="series-image-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/For Large Home Cleaning/5.webp" alt="OZMO Roller 3.0 Technology" loading="lazy">
+        </div>
+        <div class="series-image-content">
+          <h3>OZMO Roller 3.0 Technology</h3>
+          <p>Pressurized continuous fresh-water roller mopping with instant dirty water suction recovery.</p>
+        </div>
+      </article>
+      <article class="series-image-card">
+        <div class="series-image-media">
+          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/For Large Home Cleaning/6.webp" alt="Up to 15mm Lifting" loading="lazy">
+        </div>
+        <div class="series-image-content">
+          <h3>Up to 15mm Lifting</h3>
+          <p>Automatic ultrasonic carpet detection lifts mops by up to 15mm keeping area rugs completely dry.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 8. EDITORIAL OZMO ROLLER STAIN REMOVAL STORY -->
+  <section class="editorial-story-section">
+    <div style="text-align:center;margin-bottom:14px;">
+      <span class="launch-pill-ribbon ribbon-blue">NEW LAUNCH 2026 | ALL NEW T SERIES</span>
+    </div>
+    <div class="editorial-story-layout">
+      <div class="editorial-story-copy">
+        <h2>Removes Stains Effortlessly</h2>
+        <p>With the OZMO Roller 3.0, stubborn stains and everyday dirt are cleaned more effectively, so your floors look and feel cleaner.</p>
+        <p>The roller’s powerful action means you don’t have to scrub tough marks yourself. Just let your robot handle the mopping and enjoy cleaner floors with less effort.</p>
+        <div class="editorial-story-stats">
+          <div class="editorial-story-stat">
+            <strong>10N</strong>
+            <span>Downward Pressure</span>
+          </div>
+          <div class="editorial-story-stat">
+            <strong>200</strong>
+            <span>Rotation Speed RPM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="editorial-story-media">
+        <video autoplay loop muted playsinline preload="auto" poster="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/remove the stains (1).webp">
+          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/assets/removes stain efoortlessly.webm" type="video/webm">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. SERIES SHOWCASES (16:9 VIDEO LEFT + BENTO IMAGE RIGHT) -->
+  <section class="asymmetric-launch-section">
+    <h2 class="series-section-title">THE N SERIES</h2>
+    <div class="asymmetric-container">
+      <div class="left-horizontal-banner">
+        <video autoplay muted loop playsinline>
+          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/video grid/n30 white.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="right-single-image-banner">
+        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/n30 bento.webp" alt="DEEBOT N SERIES Showcase" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="asymmetric-launch-section">
+    <h2 class="series-section-title">ALL NEW T SERIES (2026)</h2>
+    <div class="asymmetric-container">
+      <div class="left-horizontal-banner">
+        <video autoplay muted loop playsinline>
+          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/video grid/t30 e.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="right-single-image-banner">
+        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/t30 e.webp" alt="DEEBOT T30e OMNI Showcase" loading="lazy">
+      </div>
+    </div>
+
+    <div class="asymmetric-container">
+      <div class="left-horizontal-banner">
+        <video autoplay muted loop playsinline>
+          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/video grid/t50 s.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="right-single-image-banner">
+        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/t50 bento.webp" alt="DEEBOT T50S PRO OMNI Showcase" loading="lazy">
+      </div>
+    </div>
+
+    <div class="asymmetric-container">
+      <div class="left-horizontal-banner">
+        <video autoplay muted loop playsinline>
+          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/video grid/t 90.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="right-single-image-banner">
+        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/t90 bento.webp" alt="DEEBOT T90 PRO OMNI Showcase" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="asymmetric-launch-section">
+    <h2 class="series-section-title">NEXT-GEN X SERIES (2026)</h2>
+    <div class="asymmetric-container">
+      <div class="left-horizontal-banner">
+        <video autoplay muted loop playsinline>
+          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/x12 showcase.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="right-single-image-banner">
+        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/x12 bento.webp" alt="DEEBOT X12 OmniCyclone Showcase" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="asymmetric-launch-section">
+    <h2 class="series-section-title">WINDOW CLEANER (2026)</h2>
+    <div class="asymmetric-container">
+      <div class="left-horizontal-banner">
+        <video autoplay muted loop playsinline>
+          <source src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/winbot_showcase.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="right-single-image-banner">
+        <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/winbot bento.webp" alt="ECOVACS WINBOT Showcase" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. ECOVACS CARE 4-CARD TRUST SECTION -->
+  <section class="ecovacs-care-section" id="ecovacs-care">
+    <div class="ecovacs-care-header">
+      <h2>ECOVACS Care</h2>
+      <p>Guidance, demonstrations, installation, and support for a confident ownership experience.</p>
+    </div>
+
+    <div class="ecovacs-care-grid">
+      <article class="ecovacs-care-card">
+        <div class="ecovacs-care-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 10v5M12 7h.01"/></svg>
+        </div>
+        <h3>Comprehensive Product Guidance</h3>
+        <p>Expert consultation to help you choose the ideal robotic cleaner tailored to your home layout and flooring.</p>
+      </article>
+
+      <article class="ecovacs-care-card">
+        <div class="ecovacs-care-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><path d="M4 13h3v6H5a1 1 0 0 1-1-1v-5Z"/><path d="M20 13h-3v6h2a1 1 0 0 0 1-1v-5Z"/></svg>
+        </div>
+        <h3>Pre-Purchase Live Product Demonstration</h3>
+        <p>Experience product performance live via video or in-person Frootle India experience centers before buying.</p>
+      </article>
+
+      <article class="ecovacs-care-card">
+        <div class="ecovacs-care-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+        <h3>Post-Purchase Installation &amp; Demonstration</h3>
+        <p>Hassle-free, professional doorstep setup and full operational guidance by trained Frootle India technicians.</p>
+      </article>
+
+      <article class="ecovacs-care-card">
+        <div class="ecovacs-care-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.2"/></svg>
+        </div>
+        <h3>Pan India Door-Step Assistance Service</h3>
+        <p>Reliable service network offering doorstep maintenance and original spare support across India.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE "FIND MY DEEBOT" HOME QUIZ (3-STEP SELECTOR) -->
+  <section class="home-quiz-section" id="find-my-deebot">
+    <div class="home-quiz-container">
+      <div class="home-quiz-header">
+        <span class="roi-pill-tag">Smart Home Matchmaker</span>
+        <h2>Find Your Perfect DEEBOT (3-Step Home Quiz)</h2>
+        <p>Answer 3 quick questions about your Indian home layout to instantly discover the ideal robotic cleaner for your floors.</p>
+      </div>
+
+      <div class="quiz-steps-grid">
+        <!-- Step 1: Home Size -->
+        <div class="quiz-step-card">
+          <div class="quiz-step-title">
+            <span class="quiz-step-number">1</span>
+            <span>Home Size</span>
+          </div>
+          <div class="quiz-options-group" data-step="size">
+            <button type="button" class="quiz-pill-btn is-selected" data-val="small">&lt; 1,200 sq. ft. (2 BHK)</button>
+            <button type="button" class="quiz-pill-btn" data-val="medium">1,200 – 2,500 sq. ft. (3–4 BHK)</button>
+            <button type="button" class="quiz-pill-btn" data-val="large">2,500+ sq. ft. (Villa / Duplex)</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Primary Concern -->
+        <div class="quiz-step-card">
+          <div class="quiz-step-title">
+            <span class="quiz-step-number">2</span>
+            <span>Primary Concern</span>
+          </div>
+          <div class="quiz-options-group" data-step="concern">
+            <button type="button" class="quiz-pill-btn is-selected" data-val="stains">Heavy Indian Mopping (Oil/Tea Stains)</button>
+            <button type="button" class="quiz-pill-btn" data-val="hair">Pet / Long Hair Tangles</button>
+            <button type="button" class="quiz-pill-btn" data-val="handsfree">Hands-Free Zero Maintenance</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Flooring & Thresholds -->
+        <div class="quiz-step-card">
+          <div class="quiz-step-title">
+            <span class="quiz-step-number">3</span>
+            <span>Flooring &amp; Thresholds</span>
+          </div>
+          <div class="quiz-options-group" data-step="floor">
+            <button type="button" class="quiz-pill-btn is-selected" data-val="tiles">Tiles / Marble</button>
+            <button type="button" class="quiz-pill-btn" data-val="rugs">Rugs &amp; Carpets</button>
+            <button type="button" class="quiz-pill-btn" data-val="thresholds">High Door Thresholds (up to 40mm)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Recommendation Output Card -->
+      <div class="quiz-result-banner" id="quizResultBanner">
+        <div class="quiz-result-left">
+          <span class="quiz-match-pill" id="quizMatchScore">✨ 98% Match for Your Home</span>
+          <h3 class="quiz-result-model" id="quizResultModel">Best Match: <span id="quizModelTitle">DEEBOT T50S PRO OMNI</span></h3>
+          <p class="quiz-result-fit-reason" id="quizResultReason">Engineered with an ultra-slim 81mm profile and TruEdge 3.0 adaptive mopping, perfect for 2–3 BHK Indian homes with tough kitchen stains and low furniture clearance.</p>
+        </div>
+
+        <div class="quiz-result-right">
+          <img id="quizResultImg" src="https://ecovacsindia.in/images/deebot-t50s-pro-omni/thumbnil/1.jpg?ver=1" alt="Recommended DEEBOT Model" class="quiz-result-thumb">
+          <div class="quiz-meta">
+            <div class="quiz-result-price-row">
+              <span class="quiz-result-mrp" id="quizResultMrp">₹1,49,999</span>
+              <span class="quiz-result-online" id="quizResultOnline">₹84,999</span>
+            </div>
+            <div class="quiz-result-actions">
+              <button type="button" class="btn-card-action btn-add-cart" id="quizAddCartBtn" data-title="DEEBOT T50S PRO OMNI" data-price="84999" data-mrp="149999" data-img="https://ecovacsindia.in/images/deebot-t50s-pro-omni/thumbnil/1.jpg?ver=1">Add to Cart</button>
+              <button type="button" class="btn-card-action btn-book-demo" id="quizBookDemoBtn">Book Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. OUR CURATED LINEUP (CENTERED 3-COLUMN SERIES ROWS) -->
+  <section class="product-catalog-section" id="productCatalog">
+    <div class="catalog-header">
+      <h2>OUR CURATED LINEUP</h2>
+    </div>
+
+    <div class="catalog-tabs-wrapper">
+      <button type="button" class="catalog-tab-btn is-active" data-catalog-target="N_Series_Catelog">THE N SERIES (3)</button>
+      <button type="button" class="catalog-tab-btn" data-catalog-target="T_Series_Catelog">ALL NEW T SERIES (3)</button>
+      <button type="button" class="catalog-tab-btn" data-catalog-target="X_Series_Catelog">THE NEXT GEN X SERIES (2)</button>
+      <button type="button" class="catalog-tab-btn" data-catalog-target="Window_Cleaner_Catelog">WINDOW CLEANER (3)</button>
+      <button type="button" class="catalog-tab-btn" data-catalog-target="Lawn_Cleaner_Catelog">LAWN &amp; POOL CLEANER (2)</button>
+      <button type="button" class="btn-compare-toggle" id="compareToggleBtn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M21 3 14 10"/><path d="m3 21 7-7"/></svg>
+        Compare Models
+      </button>
+    </div>
+
+    <!-- SIDE-BY-SIDE SERIES & MODEL COMPARISON MATRIX -->
+    <div class="comparison-matrix-wrapper" id="comparisonMatrixWrapper" style="display:none;">
+      <div class="comparison-matrix-scroll">
+        <table class="comparison-table">
+          <thead class="comparison-sticky-head">
+            <tr>
+              <th class="spec-label-col">Key Specifications (Indian Homes Focus)</th>
+              <th>
+                <div class="comparison-model-head">
+                  <span class="comparison-model-tier">N-Series Value</span>
+                  <span class="comparison-model-name">DEEBOT N30 PLUS</span>
+                </div>
+              </th>
+              <th>
+                <div class="comparison-model-head">
+                  <span class="comparison-model-tier">T-Series 2026</span>
+                  <span class="comparison-model-name">DEEBOT T30e OMNI</span>
+                </div>
+              </th>
+              <th>
+                <div class="comparison-model-head">
+                  <span class="comparison-model-tier">Ultra-Slim 81mm</span>
+                  <span class="comparison-model-name">DEEBOT T50S PRO</span>
+                </div>
+              </th>
+              <th>
+                <div class="comparison-model-head">
+                  <span class="comparison-model-tier">Flagship Power</span>
+                  <span class="comparison-model-name">DEEBOT T90 PRO OMNI</span>
+                </div>
+              </th>
+              <th>
+                <div class="comparison-model-head">
+                  <span class="comparison-model-tier">Next-Gen Cyclone</span>
+                  <span class="comparison-model-name">DEEBOT X12 OmniCyclone</span>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="spec-label-col">Suction Power (Pa)</td>
+              <td>10,000Pa Cyclone</td>
+              <td>11,000Pa BLAST</td>
+              <td class="spec-highlight-strong">15,000Pa BLAST</td>
+              <td class="spec-highlight-strong">30,000Pa BLAST (Max in India)</td>
+              <td>22,000Pa Hurricane</td>
+            </tr>
+            <tr>
+              <td class="spec-label-col">Mopping System</td>
+              <td>OZMO Standard Mopping</td>
+              <td>Dual Spinning High-Speed Pads</td>
+              <td>TruEdge 3.0 Adaptive Wall Mopping</td>
+              <td class="spec-highlight-strong">OZMO Roller 3.0 Scrub (10N, 200 RPM)</td>
+              <td>Dual Heated Rotary Scrub</td>
+            </tr>
+            <tr>
+              <td class="spec-label-col">Threshold Climbing</td>
+              <td>20mm Standard</td>
+              <td>20mm</td>
+              <td>22mm + 15mm Carpet Lift</td>
+              <td class="spec-highlight-strong">40mm High-Traction Climb + 15mm Lift</td>
+              <td>25mm + 15mm Carpet Lift</td>
+            </tr>
+            <tr>
+              <td class="spec-label-col">Anti-Hair Tangle Tech</td>
+              <td>V-Shape Anti-Tangle Brush</td>
+              <td>ZeroTangle 3.0</td>
+              <td class="spec-highlight-strong">ZeroTangle 4.0 Dual Comb Array</td>
+              <td class="spec-highlight-strong">ZeroTangle 4.0 Anti-Hair Wrap</td>
+              <td>ZeroTangle Pro Cyclone</td>
+            </tr>
+            <tr>
+              <td class="spec-label-col">OMNI Station Features</td>
+              <td>Auto-Empty Station (60 Days)</td>
+              <td>Auto-Empty + Mop Wash + Hot Air Dry</td>
+              <td>Compact OMNI + 70°C Hot Water Wash</td>
+              <td class="spec-highlight-strong">120 Days Hands-Free + 70°C Hot Water &amp; Dry</td>
+              <td>Bagless Dual-Separation Multi-Cyclone</td>
+            </tr>
+            <tr>
+              <td class="spec-label-col">Water Tank Capacity</td>
+              <td>N/A (Robot Onboard 300ml)</td>
+              <td>4.0L Clean / 3.5L Dirty</td>
+              <td>4.0L Clean / 3.5L Dirty</td>
+              <td class="spec-highlight-strong">4.5L Clean / 4.0L Dirty</td>
+              <td>4.0L Clean / 3.5L Dirty</td>
+            </tr>
+            <tr>
+              <td class="spec-label-col">Best For Indian Households</td>
+              <td>2 BHK apartments, tiles &amp; hard floors</td>
+              <td>2–3 BHK homes, routine daily cleaning</td>
+              <td>3–4 BHK homes, low couches &amp; pet hair</td>
+              <td class="spec-highlight-strong">Villas/Duplexes, deep spice/oil stains &amp; step dividers</td>
+              <td>Large modern villas, bagless zero-cost running</td>
+            </tr>
+            <tr>
+              <td class="spec-label-col">MRP vs. Online Price</td>
+              <td><span style="text-decoration:line-through;color:var(--muted);font-size:11px;">₹89,999</span><br><strong style="color:var(--ecovacs-blue);font-size:14px;">₹32,999</strong></td>
+              <td><span style="text-decoration:line-through;color:var(--muted);font-size:11px;">₹99,999</span><br><strong style="color:var(--ecovacs-blue);font-size:14px;">₹54,999</strong></td>
+              <td><span style="text-decoration:line-through;color:var(--muted);font-size:11px;">₹1,49,999</span><br><strong style="color:var(--ecovacs-blue);font-size:14px;">₹84,999</strong></td>
+              <td><span style="text-decoration:line-through;color:var(--muted);font-size:11px;">₹1,99,999</span><br><strong style="color:var(--ecovacs-blue);font-size:14px;">₹1,19,999</strong></td>
+              <td><span style="text-decoration:line-through;color:var(--muted);font-size:11px;">₹2,19,999</span><br><strong style="color:var(--ecovacs-blue);font-size:14px;">₹1,29,999</strong></td>
+            </tr>
+            <tr>
+              <td class="spec-label-col">Instant Actions</td>
+              <td class="comparison-action-cell">
+                <div class="product-actions-row">
+                  <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT N30 PLUS" data-price="32999" data-mrp="89999" data-img="https://ecovacsindia.in/images/deebot-n30-plus/thumbnil/N30-Plus-Best-Seller.jpg">+ Add to Cart</button>
+                  <button type="button" class="btn-card-action btn-book-demo">Book Demo</button>
+                </div>
+              </td>
+              <td class="comparison-action-cell">
+                <div class="product-actions-row">
+                  <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT T30e OMNI" data-price="54999" data-mrp="99999" data-img="https://ecovacsindia.in/images/deebot-t30e-omni/thumbnil/T30e-Omni-Main.jpg">+ Add to Cart</button>
+                  <button type="button" class="btn-card-action btn-book-demo">Book Demo</button>
+                </div>
+              </td>
+              <td class="comparison-action-cell">
+                <div class="product-actions-row">
+                  <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT T50S PRO OMNI" data-price="84999" data-mrp="149999" data-img="https://ecovacsindia.in/images/deebot-t50s-pro-omni/thumbnil/1.jpg?ver=1">+ Add to Cart</button>
+                  <button type="button" class="btn-card-action btn-book-demo">Book Demo</button>
+                </div>
+              </td>
+              <td class="comparison-action-cell">
+                <div class="product-actions-row">
+                  <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT T90 PRO OMNI" data-price="119999" data-mrp="199999" data-img="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/The Future of Cleaning/1.webp">+ Add to Cart</button>
+                  <button type="button" class="btn-card-action btn-book-demo">Book Demo</button>
+                </div>
+              </td>
+              <td class="comparison-action-cell">
+                <div class="product-actions-row">
+                  <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT X12 OmniCyclone" data-price="129999" data-mrp="219999" data-img="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/x12 bento.webp">+ Add to Cart</button>
+                  <button type="button" class="btn-card-action btn-book-demo">Book Demo</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- N SERIES -->
+    <div class="catalog-category-block" id="N_Series_Catelog">
+      <div class="catalog-category-header">
+        <div class="catalog-category-title">THE N SERIES</div>
+      </div>
+      <div class="product-grid-row">
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/deebot-n30-white/thumbnil/N30-White-Best-Seller.jpg" alt="DEEBOT N30 White" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">DEEBOT N30 White</h3>
+            <p class="product-summary-text">High-efficiency suction and smart LiDAR navigation in an elegant white finish.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹59,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹23,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="DEEBOT N30 White" data-desc="High-efficiency suction, ZeroTangle anti-hair brush, and smart TrueMapping LiDAR navigation.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT N30 White">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="DEEBOT N30 White">Book Your Demo</button>
+          </div>
+        </div>
+
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/deebot-n30-plus/thumbnil/N30-Plus-Best-Seller.jpg" alt="DEEBOT N30 PLUS" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">DEEBOT N30 PLUS</h3>
+            <p class="product-summary-text">Smart robot vacuum and mop featuring an auto-empty dust station for hands-free maintenance.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹89,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹32,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="DEEBOT N30 PLUS" data-desc="Includes auto-empty dust station for weeks of maintenance-free robotic vacuuming and mopping.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT N30 PLUS">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="DEEBOT N30 PLUS">Book Your Demo</button>
+          </div>
+        </div>
+
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/deebot-n50-pro-omni/thumbnil/N50-Pro-Omni.jpeg" alt="DEEBOT N50 Pro Omni" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">DEEBOT N50 Pro Omni</h3>
+            <p class="product-summary-text">Next-generation robotic vacuum and mop featuring an all-in-one OMNI dock with auto mop washing.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹1,69,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹59,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="DEEBOT N50 Pro Omni" data-desc="All-in-one OMNI dock with automatic dust emptying, mop washing, and hot air drying.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT N50 Pro Omni">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="DEEBOT N50 Pro Omni">Book Your Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- T SERIES -->
+    <div class="catalog-category-block" id="T_Series_Catelog">
+      <div class="catalog-category-header">
+        <div class="catalog-category-title">ALL NEW T SERIES (2026)</div>
+      </div>
+      <div class="product-grid-row">
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/deebot-t30e-omni/thumbnil/T30e-Omni-Main.jpg" alt="DEEBOT T30e OMNI" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">DEEBOT T30e OMNI</h3>
+            <p class="product-summary-text">High-performance robot vacuum and mop featuring an automated OMNI station &amp; TruEdge cleaning.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹99,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹54,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="DEEBOT T30e OMNI" data-desc="TruEdge adaptive edge mopping with ZeroTangle anti-hair technology and compact OMNI station.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT T30e OMNI">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="DEEBOT T30e OMNI">Book Your Demo</button>
+          </div>
+        </div>
+
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/deebot-t50s-pro-omni/thumbnil/1.jpg?ver=1" alt="DEEBOT T50S PRO OMNI" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">DEEBOT T50S PRO OMNI</h3>
+            <p class="product-summary-text">Ultra-slim 81mm robotic vacuum and mop engineered for deep under-furniture reach and 15,000Pa suction power.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹1,49,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹84,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="DEEBOT T50S PRO OMNI" data-desc="Ultra-slim 81mm profile with TruEdge 3.0 adaptive edge mopping and intelligent auto-empty station.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT T50S PRO OMNI">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="DEEBOT T50S PRO OMNI">Book Your Demo</button>
+          </div>
+        </div>
+
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/The Future of Cleaning/1.webp" alt="DEEBOT T90 PRO OMNI" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">DEEBOT T90 PRO OMNI</h3>
+            <p class="product-summary-text">Flagship 30,000Pa BLAST suction, TruEdge 3.0 edge-mopping, and autonomous hot-water station.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹1,99,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹1,19,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="DEEBOT T90 PRO OMNI" data-desc="Unmatched 30,000Pa BLAST suction, 120-day hands-free OMNI station, and OZMO Roller 3.0 deep scrub technology.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT T90 PRO OMNI">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="DEEBOT T90 PRO OMNI">Book Your Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- X SERIES -->
+    <div class="catalog-category-block" id="X_Series_Catelog" style="display:none;">
+      <div class="catalog-category-header">
+        <div class="catalog-category-title">THE NEXT GEN X SERIES</div>
+      </div>
+      <div class="product-grid-row">
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/x12 bento.webp" alt="DEEBOT X12 OmniCyclone" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">DEEBOT X12 OmniCyclone</h3>
+            <p class="product-summary-text">Next-gen AI visual navigation with bagless OmniCyclone dual-separation dust station and heated mopping.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹2,19,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹1,29,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="DEEBOT X12 OmniCyclone" data-desc="Bagless OmniCyclone multi-cyclone filtration, 22,000Pa suction, and AIVI 3D RGB AI obstacle recognition.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT X12 OmniCyclone">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="DEEBOT X12 OmniCyclone">Book Your Demo</button>
+          </div>
+        </div>
+
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/deebot-x2-combo/thumbnil/x2-combo.jpg" alt="DEEBOT X2 COMBO" onerror="this.onerror=null;this.src='https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/x12 bento.webp';" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">DEEBOT X2 COMBO</h3>
+            <p class="product-summary-text">Dual robotic cleaner and detachable handheld cordless vacuum in one integrated high-power OMNI station.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹2,49,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹1,49,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="DEEBOT X2 COMBO" data-desc="Square profile robotic cleaner combined with high-performance cordless handheld vacuum in dual auto-empty hub.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="DEEBOT X2 COMBO">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="DEEBOT X2 COMBO">Book Your Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WINDOW CLEANER -->
+    <div class="catalog-category-block" id="Window_Cleaner_Catelog" style="display:none;">
+      <div class="catalog-category-header">
+        <div class="catalog-category-title">WINDOW CLEANER</div>
+      </div>
+      <div class="product-grid-row">
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/winbot bento.webp" alt="WINBOT W2 OMNI" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">WINBOT W2 OMNI</h3>
+            <p class="product-summary-text">Portable multi-surface window cleaner with 6-in-1 portable base station and three-nozzle wide-angle spray.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹99,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹59,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="WINBOT W2 OMNI" data-desc="Portable suitcase base station with built-in battery, safety composite cable, and edge-to-edge intelligent window cleaning.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="WINBOT W2 OMNI">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="WINBOT W2 OMNI">Book Your Demo</button>
+          </div>
+        </div>
+
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/winbot-w1-pro/thumbnil/w1-pro.jpg" alt="WINBOT W1 PRO" onerror="this.onerror=null;this.src='https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/winbot bento.webp';" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">WINBOT W1 PRO</h3>
+            <p class="product-summary-text">Cross auto-spray dual direction cleaning with WIN-SLAM 3.0 intelligent edge-detection planning.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹69,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹36,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="WINBOT W1 PRO" data-desc="2800Pa high-suction window robot with cross spray nozzles and anti-slip drive system.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="WINBOT W1 PRO">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="WINBOT W1 PRO">Book Your Demo</button>
+          </div>
+        </div>
+
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/winbot-w2/thumbnil/w2.jpg" alt="WINBOT W2" onerror="this.onerror=null;this.src='https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/left side grid images/winbot bento.webp';" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">WINBOT W2</h3>
+            <p class="product-summary-text">Advanced window cleaning robot with non-slip track drive, edge sensors, and powerful 2800Pa suction.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹79,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹44,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="WINBOT W2" data-desc="Smart glass cleaner with edge-climbing tracks and intelligent multi-directional route planning.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="WINBOT W2">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="WINBOT W2">Book Your Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAWN & POOL CLEANER -->
+    <div class="catalog-category-block" id="Lawn_Cleaner_Catelog" style="display:none;">
+      <div class="catalog-category-header">
+        <div class="catalog-category-title">LAWN &amp; POOL CLEANER</div>
+      </div>
+      <div class="product-grid-row">
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/goat-g1-800/thumbnil/goat-800.jpg" alt="GOAT G1-800 Robotic Mower" onerror="this.onerror=null;this.src='https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/For Large Home Cleaning/1.webp';" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">GOAT G1-800</h3>
+            <p class="product-summary-text">Wire-free boundary beacon setup, AIVI 3D obstacle avoidance, and high-efficiency striped lawn mowing.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹1,79,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹1,09,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="GOAT G1-800" data-desc="Wire-free beacon setup for yards up to 800 sq. m. with logical striped cutting and AI vision obstacle bypass.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="GOAT G1-800">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="GOAT G1-800">Book Your Demo</button>
+          </div>
+        </div>
+
+        <div class="product-card-pro">
+          <div class="product-thumb-box">
+            <img src="https://ecovacsindia.in/images/goat-g1-2000/thumbnil/goat-2000.jpg" alt="GOAT G1-2000 Robotic Mower" onerror="this.onerror=null;this.src='https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/For Large Home Cleaning/2.webp';" loading="lazy">
+          </div>
+          <div>
+            <h3 class="product-title">GOAT G1-2000</h3>
+            <p class="product-summary-text">Commercial-grade robotic lawn mower covering up to 2,000 sq. m. with dual panoramic LiDAR cameras.</p>
+            <div class="product-price-matrix">
+              <div class="price-col"><span class="price-label">MRP</span><span class="price-val price-mrp">₹2,49,999</span></div>
+              <div class="price-col"><span class="price-label">Online Price</span><span class="price-val price-online">₹1,49,999</span></div>
+            </div>
+          </div>
+          <div class="product-actions-group">
+            <div class="product-actions-row">
+              <button type="button" class="btn-card-action btn-know-more" data-title="GOAT G1-2000" data-desc="Large estate robotic mower with all-terrain climbing, dual vision cameras, and smart multi-zone scheduling.">Know More</button>
+              <button type="button" class="btn-card-action btn-add-cart" data-title="GOAT G1-2000">Add to Cart</button>
+            </div>
+            <button type="button" class="btn-card-action btn-book-demo" data-title="GOAT G1-2000">Book Your Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GENUINE ACCESSORIES & CONSUMABLES STRIP -->
+  <section class="accessories-section" id="accessories-strip">
+    <div class="accessories-container">
+      <div class="accessories-header">
+        <span class="roi-pill-tag">100% Genuine Ecovacs Spares</span>
+        <h2>Genuine Accessories &amp; Consumables</h2>
+        <p>Maintain peak cleaning performance and extended robotic lifespan with certified OEM consumable bundles.</p>
+      </div>
+
+      <div class="accessories-grid">
+        <!-- Accessory 1 -->
+        <article class="accessory-card">
+          <div class="accessory-card-top">
+            <div class="accessory-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <h3>Antibacterial Floor Solution (1L)</h3>
+            <p>Specially formulated for Indian marble, vitrified tiles, and wooden floors. Eliminates 99.9% germs with zero sticky residue.</p>
+          </div>
+          <div>
+            <div class="accessory-pricing-row">
+              <span class="accessory-mrp">MRP ₹1,999</span>
+              <span class="accessory-online">₹999</span>
+            </div>
+            <button type="button" class="btn-add-accessory" data-title="Antibacterial Floor Solution (1L)" data-price="999" data-mrp="1999" data-img="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/For Large Home Cleaning/4.webp">+ Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Accessory 2 -->
+        <article class="accessory-card">
+          <div class="accessory-card-top">
+            <div class="accessory-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3>ZeroTangle Main Roller Brush</h3>
+            <p>Dual-comb anti-tangle bristles engineered specifically for Indian homes with pets and long hair. Washable and durable.</p>
+          </div>
+          <div>
+            <div class="accessory-pricing-row">
+              <span class="accessory-mrp">MRP ₹2,999</span>
+              <span class="accessory-online">₹1,499</span>
+            </div>
+            <button type="button" class="btn-add-accessory" data-title="ZeroTangle Main Roller Brush" data-price="1499" data-mrp="2999" data-img="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/The Future of Cleaning/3.webp">+ Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Accessory 3 -->
+        <article class="accessory-card">
+          <div class="accessory-card-top">
+            <div class="accessory-icon-box">
+              <svg viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+            </div>
+            <h3>Washable HEPA Filters (Pack of 3)</h3>
+            <p>E11-grade high-efficiency filtration capturing 99.97% microscopic dust mites, pollen, and PM2.5 particulate matter.</p>
+          </div>
+          <div>
+            <div class="accessory-pricing-row">
+              <span class="accessory-mrp">MRP ₹2,499</span>
+              <span class="accessory-online">₹1,199</span>
+            </div>
+            <button type="button" class="btn-add-accessory" data-title="Washable HEPA Filters (Pack of 3)" data-price="1199" data-mrp="2499" data-img="https://ecovacsindia.in/images/deebot-n30-plus/thumbnil/N30-Plus-Best-Seller.jpg">+ Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Accessory 4 -->
+        <article class="accessory-card">
+          <div class="accessory-card-top">
+            <div class="accessory-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h3>OMNI Dust Bags (Pack of 3)</h3>
+            <p>Multi-layer antibacterial sealing dust bags with activated carbon lining. Holds up to 120 days of debris odor-free.</p>
+          </div>
+          <div>
+            <div class="accessory-pricing-row">
+              <span class="accessory-mrp">MRP ₹2,499</span>
+              <span class="accessory-online">₹1,299</span>
+            </div>
+            <button type="button" class="btn-add-accessory" data-title="OMNI Dust Bags (Pack of 3)" data-price="1299" data-mrp="2499" data-img="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/The Future of Cleaning/4.webp">+ Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. PAN-INDIA OFFICES BANNER & FOOTER -->
+  <section class="ecovacs-offices-map-section">
+    <div class="offices-map-container">
+      <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/assets/Ecovacs Frootle Store Map (1).png"
+           class="offices-map-img" alt="Pan-India Corporate Offices & Experience Centers" loading="lazy">
+    </div>
+  </section>
+
+</main>
+
+<!-- Site Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>Frootle India</h4>
+      <p>Official National Distributor &amp; Brand Partner for ECOVACS Robotics in India.</p>
+      <p>Offering authorized sales, genuine warranty, spare parts, and pan-India doorstep customer service.</p>
+    </div>
+    <div>
+      <h4>Explore Products</h4>
+      <ul>
+        <li><a href="#productCatalog">DEEBOT Robot Vacuums</a></li>
+        <li><a href="#productCatalog">WINBOT Window Cleaners</a></li>
+        <li><a href="#productCatalog">GOAT Robotic Lawn Mowers</a></li>
+        <li><a href="#t-series-features">New Launch 2026 T-Series</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Customer Care</h4>
+      <ul>
+        <li><a href="#book-demo-experience">Book a Free Live Demo</a></li>
+        <li><a href="#sets-us-apart">Locate Experience Center</a></li>
+        <li><a href="#ecovacs-care">Doorstep Installation</a></li>
+        <li><a href="tel:18002588085">Toll Free: 1800 258 8085</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Head Office</h4>
+      <p>Frootle India Pvt. Ltd.</p>
+      <p>Tower B, 8th Floor, Commercial Complex, Sector 65, Gurugram, Haryana 122102</p>
+      <p>Email: care@ecovacsindia.in</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 ECOVACS Robotics &amp; Frootle India. All rights reserved.
+  </div>
+</footer>
+
+<!-- Store Details & Demo Modal -->
+<dialog class="ecovacs-modal" id="infoModal">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+    <h3 id="modalTitle" style="font-size:16px; font-weight:700; color:var(--ecovacs-blue); margin:0;">Store Details</h3>
+    <button type="button" id="closeModalBtn" style="background:transparent; border:none; font-size:22px; cursor:pointer; color:var(--muted); line-height:1;">&times;</button>
+  </div>
+  <div id="modalBody" style="font-size:13px; color:var(--ink-body); line-height:1.6; margin-bottom:18px;"></div>
+  <div style="display:flex; gap:10px; justify-content:flex-end;">
+    <button type="button" id="modalActionBtn" class="btn-card-action btn-add-cart" style="width:auto; padding:8px 16px;">Book In-Store Visit</button>
+  </div>
+</dialog>
+
+
+<!-- SLIDE-OVER CART DRAWER -->
+<div class="cart-drawer-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart Drawer">
+  <div class="cart-drawer-header">
+    <h3>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+      Your Cart (<span id="cartHeaderCount">0</span>)
+    </h3>
+    <button type="button" class="cart-drawer-close" id="closeCartBtn" aria-label="Close Shopping Cart">&times;</button>
+  </div>
+
+  <div class="cart-drawer-body" id="cartItemsList">
+    <!-- Items rendered dynamically via JS -->
+  </div>
+
+  <div class="cart-drawer-footer" id="cartFooter">
+    <div class="cart-savings-banner" id="cartSavingsBanner">
+      <span>🎉</span>
+      <span>You Save <strong id="cartSavingsTotal">₹0</strong> with Frootle India Exclusive Pricing!</span>
+    </div>
+
+    <div class="cart-summary-line">
+      <span>Total MRP:</span>
+      <span id="cartMrpTotal" style="text-decoration:line-through;">₹0</span>
+    </div>
+
+    <div class="cart-summary-line cart-summary-total">
+      <span>Total Payable:</span>
+      <span id="cartOnlineTotal">₹0</span>
+    </div>
+
+    <button type="button" class="btn-convert-demo" id="btnConvertDemo">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Convert Cart to Free Home/Store Demo
+    </button>
+
+    <button type="button" class="btn-checkout-now" id="btnCheckoutNow">
+      Proceed to Instant Checkout &rarr;
+    </button>
+  </div>
+</aside>
+
+<!-- Notification Toast -->
+<div class="cart-toast" id="actionToast">Item added to cart!</div>
+
+<!-- ==========================================================================
+     INTERACTIVE JAVASCRIPT
+     ========================================================================== -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* --------------------------------------------------------------------------
+     1. GLOBAL METRICS SWITCHER TABS (MOBILE)
+     -------------------------------------------------------------------------- */
+  const metricTabBtns = document.querySelectorAll('.metrics-tab-btn');
+  const metricPanels = document.querySelectorAll('.metrics-panel');
+
+  metricTabBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const targetId = this.dataset.metricsTarget;
+      metricTabBtns.forEach(b => b.classList.remove('is-active'));
+      metricPanels.forEach(p => p.classList.remove('mobile-active'));
+
+      this.classList.add('is-active');
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add('mobile-active');
+      }
+    });
+  });
+
+  /* --------------------------------------------------------------------------
+     2. INTERACTIVE ROI CALCULATOR (MAID VS. DEEBOT)
+     -------------------------------------------------------------------------- */
+  const homeAreaSlider = document.getElementById('homeAreaSlider');
+  const maidExpenseSlider = document.getElementById('maidExpenseSlider');
+  const homeAreaVal = document.getElementById('homeAreaVal');
+  const maidExpenseVal = document.getElementById('maidExpenseVal');
+  const freqBtns = document.querySelectorAll('.roi-freq-btn');
+
+  const roiAnnualSavingsEl = document.getElementById('roiAnnualSavings');
+  const roiPaybackPeriodEl = document.getElementById('roiPaybackPeriod');
+  const roiHoursSavedEl = document.getElementById('roiHoursSaved');
+
+  let currentFreq = 1; // 1 = Daily, 2 = Twice Daily
+
+  freqBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      freqBtns.forEach(b => b.classList.remove('is-active'));
+      this.classList.add('is-active');
+      currentFreq = parseInt(this.dataset.freq, 10) || 1;
+      calculateROI();
+    });
+  });
+
+  function calculateROI() {
+    if (!homeAreaSlider || !maidExpenseSlider) return;
+
+    const area = parseInt(homeAreaSlider.value, 10);
+    const monthlyExpense = parseInt(maidExpenseSlider.value, 10);
+
+    // Update display values in labels
+    if (homeAreaVal) homeAreaVal.textContent = area.toLocaleString('en-IN');
+    if (maidExpenseVal) maidExpenseVal.textContent = monthlyExpense.toLocaleString('en-IN');
+
+    // Financial calculations
+    const annualMaidExpense = monthlyExpense * 12;
+    // DEEBOT benchmark: average flagship/mid-tier unit ₹39,999, annual consumables & power ₹2,400
+    const deebotUpfrontCost = 39999;
+    const deebotAnnualRunningCost = 2400;
+
+    const netAnnualSavings = Math.max(0, annualMaidExpense - deebotAnnualRunningCost);
+    const netMonthlySavings = Math.max(1, monthlyExpense - (deebotAnnualRunningCost / 12));
+    const paybackMonths = (deebotUpfrontCost / netMonthlySavings).toFixed(1);
+
+    // Time saved calculation (synced with ECOVACS 1.1B Hours Saved metric)
+    // Daily manual sweeping & mopping time in minutes: ~35 mins for 800 sq ft up to ~120 mins for 5000 sq ft
+    const baseDailyMinutes = 20 + (area / 1000) * 20; // 1800 sq ft = 56 mins
+    const freqMultiplier = currentFreq === 2 ? 1.85 : 1.0;
+    const annualHoursSaved = Math.round((baseDailyMinutes * freqMultiplier * 365) / 60);
+
+    // Animate or update outputs
+    if (roiAnnualSavingsEl) {
+      roiAnnualSavingsEl.textContent = '₹' + netAnnualSavings.toLocaleString('en-IN');
+    }
+    if (roiPaybackPeriodEl) {
+      roiPaybackPeriodEl.textContent = paybackMonths + ' Months';
+    }
+    if (roiHoursSavedEl) {
+      roiHoursSavedEl.textContent = annualHoursSaved.toLocaleString('en-IN') + ' Hours/yr';
+    }
+  }
+
+  if (homeAreaSlider) homeAreaSlider.addEventListener('input', calculateROI);
+  if (maidExpenseSlider) maidExpenseSlider.addEventListener('input', calculateROI);
+  calculateROI(); // initialize values
+
+  /* --------------------------------------------------------------------------
+     3. INTERACTIVE PAN-INDIA STORE MAP HOTSPOTS & STORE GRID SYNC
+     -------------------------------------------------------------------------- */
+  const storeCityFilter = document.getElementById('storeCityFilter');
+  const homeStoresGrid = document.getElementById('homeStoresGrid');
+  const storeCards = homeStoresGrid ? Array.from(homeStoresGrid.querySelectorAll('.store-grid-card')) : [];
+  const mapHotspotPins = document.querySelectorAll('.map-hotspot-pin');
+
+  // Filter stores and sync visual state
+  function filterExperienceStores(selectedCity, triggeredByPin = false) {
+    if (!homeStoresGrid) return;
+
+    const normalizedCity = (selectedCity || 'ALL').trim().toLowerCase();
+
+    // 1. Update Map Hotspot Pins active state
+    mapHotspotPins.forEach(pin => {
+      const pinCity = (pin.dataset.city || '').trim().toLowerCase();
+      if (normalizedCity !== 'all' && (pinCity === normalizedCity || (normalizedCity === 'delhi ncr' && pinCity === 'delhi ncr'))) {
+        pin.classList.add('is-active');
+      } else {
+        pin.classList.remove('is-active');
+      }
+    });
+
+    // 2. Filter Store Grid Cards
+    let matchCount = 0;
+    storeCards.forEach(card => {
+      const cardCity = (card.dataset.city || '').trim().toLowerCase();
+      let isMatch = false;
+
+      if (normalizedCity === 'all') {
+        isMatch = true;
+      } else if (normalizedCity === 'delhi ncr') {
+        // Matches Delhi, Gurgaon, and Noida stores in NCR
+        isMatch = (cardCity === 'delhi' || cardCity === 'gurgaon' || cardCity === 'noida');
+      } else {
+        isMatch = (cardCity === normalizedCity);
+      }
+
+      if (isMatch) {
+        card.style.display = 'flex';
+        matchCount++;
+        if (normalizedCity !== 'all') {
+          // Highlight card border in --ecovacs-blue
+          card.classList.add('is-active-filter');
+        } else {
+          card.classList.remove('is-active-filter');
+        }
+      } else {
+        card.style.display = 'none';
+        card.classList.remove('is-active-filter');
+      }
+    });
+
+    // 3. If triggered by clicking on a map pin, smoothly bring the filtered store cards into view
+    if (triggeredByPin && window.innerWidth <= 991 && homeStoresGrid) {
+      homeStoresGrid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  // Hotspot Pin click handler
+  mapHotspotPins.forEach(pin => {
+    pin.addEventListener('click', function () {
+      const pinCity = this.dataset.city;
+      if (storeCityFilter) {
+        storeCityFilter.value = pinCity;
+      }
+      filterExperienceStores(pinCity, true);
+    });
+  });
+
+  // Dropdown filter change handler
+  if (storeCityFilter) {
+    storeCityFilter.addEventListener('change', function () {
+      filterExperienceStores(this.value, false);
+    });
+  }
+
+  /* --------------------------------------------------------------------------
+     4. STORE CARD MODAL POPUP
+     -------------------------------------------------------------------------- */
+  const infoModal = document.getElementById('infoModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalBody = document.getElementById('modalBody');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const modalActionBtn = document.getElementById('modalActionBtn');
+  const actionToast = document.getElementById('actionToast');
+
+  function showToast(message) {
+    if (!actionToast) return;
+    actionToast.textContent = message;
+    actionToast.classList.add('is-visible');
+    setTimeout(() => {
+      actionToast.classList.remove('is-visible');
+    }, 2800);
+  }
+
+  storeCards.forEach(card => {
+    card.addEventListener('click', function () {
+      const title = this.dataset.title || this.querySelector('.store-card-title')?.textContent || 'Experience Store';
+      const address = this.dataset.address || 'Authorized Frootle India ECOVACS Experience Center.';
+
+      if (modalTitle) modalTitle.textContent = title;
+      if (modalBody) {
+        modalBody.innerHTML = `
+          <p><strong>Address:</strong><br>${address}</p>
+          <p style="margin-top:10px;"><strong>Hours:</strong> Mon - Sun: 10:30 AM - 8:30 PM</p>
+          <p style="margin-top:6px;"><strong>Services:</strong> Live Demonstrations, Expert Guidance, Instant Purchase &amp; Service Booking.</p>
+        `;
+      }
+      if (modalActionBtn) {
+        modalActionBtn.textContent = 'Book In-Store Demo';
+        modalActionBtn.onclick = function () {
+          infoModal.close();
+          const demoSec = document.getElementById('book-demo-experience');
+          if (demoSec) demoSec.scrollIntoView({ behavior: 'smooth' });
+        };
+      }
+      if (infoModal && typeof infoModal.showModal === 'function') {
+        infoModal.showModal();
+      }
+    });
+  });
+
+  if (closeModalBtn && infoModal) {
+    closeModalBtn.addEventListener('click', () => infoModal.close());
+    infoModal.addEventListener('click', e => {
+      if (e.target === infoModal) infoModal.close();
+    });
+  }
+
+  /* --------------------------------------------------------------------------
+     5. PRODUCT CATALOG TABS SWITCHER
+     -------------------------------------------------------------------------- */
+  const catalogTabs = document.querySelectorAll('.catalog-tab-btn');
+  const catalogBlocks = document.querySelectorAll('.catalog-category-block');
+
+  catalogTabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+      const targetId = this.dataset.catalogTarget;
+      catalogTabs.forEach(t => t.classList.remove('is-active'));
+      this.classList.add('is-active');
+
+      catalogBlocks.forEach(block => {
+        if (block.id === targetId) {
+          block.style.display = 'block';
+        } else {
+          block.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  /* --------------------------------------------------------------------------
+     6. PRODUCT CARD ACTIONS (KNOW MORE, ADD TO CART, BOOK DEMO)
+     -------------------------------------------------------------------------- */
+  document.querySelectorAll('.btn-know-more').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const title = this.dataset.title || 'Product Details';
+      const desc = this.dataset.desc || 'Explore cutting-edge robotic cleaning powered by ECOVACS & Frootle India.';
+
+      if (modalTitle) modalTitle.textContent = title;
+      if (modalBody) {
+        modalBody.innerHTML = `
+          <p style="font-size:13.5px;margin-bottom:12px;">${desc}</p>
+          <ul style="padding-left:18px;list-style:disc;font-size:12.5px;color:var(--ink-body);display:flex;flex-direction:column;gap:6px;">
+            <li>1-Year Comprehensive Warranty by Frootle India</li>
+            <li>Free Doorstep Demonstration &amp; Installation</li>
+            <li>Zero-Cost EMI starting from ₹2,999/month</li>
+          </ul>
+        `;
+      }
+      if (modalActionBtn) {
+        modalActionBtn.textContent = 'Add to Cart';
+        modalActionBtn.onclick = function () {
+          infoModal.close();
+          showToast(title + ' added to cart!');
+        };
+      }
+      if (infoModal && typeof infoModal.showModal === 'function') {
+        infoModal.showModal();
+      }
+    });
+  });
+
+  document.querySelectorAll('.btn-add-cart').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const title = this.dataset.title || 'Product';
+      showToast(title + ' added to cart!');
+    });
+  });
+
+  document.querySelectorAll('.btn-book-demo').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const demoSec = document.getElementById('book-demo-experience');
+      if (demoSec) {
+        demoSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+
+  /* --------------------------------------------------------------------------
+     7. SLIDE-OVER CART DRAWER & STATE MANAGEMENT
+     -------------------------------------------------------------------------- */
+  const cartToggleBtn = document.getElementById('cartToggleBtn');
+  const cartDrawer = document.getElementById('cartDrawer');
+  const cartOverlay = document.getElementById('cartOverlay');
+  const closeCartBtn = document.getElementById('closeCartBtn');
+  const cartBadgeCount = document.getElementById('cartBadgeCount');
+  const cartHeaderCount = document.getElementById('cartHeaderCount');
+  const cartItemsList = document.getElementById('cartItemsList');
+  const cartSavingsTotal = document.getElementById('cartSavingsTotal');
+  const cartMrpTotal = document.getElementById('cartMrpTotal');
+  const cartOnlineTotal = document.getElementById('cartOnlineTotal');
+  const cartSavingsBanner = document.getElementById('cartSavingsBanner');
+  const btnConvertDemo = document.getElementById('btnConvertDemo');
+  const btnCheckoutNow = document.getElementById('btnCheckoutNow');
+
+  // Cart store
+  let cart = [];
+
+  function openCart() {
+    if (cartDrawer && cartOverlay) {
+      cartDrawer.classList.add('is-open');
+      cartOverlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeCart() {
+    if (cartDrawer && cartOverlay) {
+      cartDrawer.classList.remove('is-open');
+      cartOverlay.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (cartToggleBtn) cartToggleBtn.addEventListener('click', openCart);
+  if (closeCartBtn) closeCartBtn.addEventListener('click', closeCart);
+  if (cartOverlay) cartOverlay.addEventListener('click', closeCart);
+
+  function addItemToCart(item) {
+    const existing = cart.find(i => i.title === item.title);
+    if (existing) {
+      existing.qty += 1;
+    } else {
+      cart.push({
+        title: item.title,
+        price: parseInt(item.price, 10) || 0,
+        mrp: parseInt(item.mrp, 10) || (parseInt(item.price, 10) * 1.5) || 0,
+        img: item.img || 'https://ecovacsindia.in/images/deebot-n30-white/thumbnil/N30-White-Best-Seller.jpg',
+        qty: 1
+      });
+    }
+    renderCart();
+    showToast(item.title + ' added to cart!');
+  }
+
+  function updateItemQty(index, delta) {
+    if (!cart[index]) return;
+    cart[index].qty += delta;
+    if (cart[index].qty <= 0) {
+      cart.splice(index, 1);
+    }
+    renderCart();
+  }
+
+  function removeItem(index) {
+    if (cart[index]) {
+      cart.splice(index, 1);
+      renderCart();
+    }
+  }
+
+  function renderCart() {
+    const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+    if (cartBadgeCount) cartBadgeCount.textContent = totalCount;
+    if (cartHeaderCount) cartHeaderCount.textContent = totalCount;
+
+    if (!cartItemsList) return;
+
+    if (cart.length === 0) {
+      cartItemsList.innerHTML = `
+        <div class="cart-empty-state">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          <h4>Your Cart is Empty</h4>
+          <p style="font-size:12px;">Add a DEEBOT robot vacuum or genuine consumables to unlock exclusive bundled savings.</p>
+        </div>
+      `;
+      if (cartMrpTotal) cartMrpTotal.textContent = '₹0';
+      if (cartOnlineTotal) cartOnlineTotal.textContent = '₹0';
+      if (cartSavingsTotal) cartSavingsTotal.textContent = '₹0';
+      if (cartSavingsBanner) cartSavingsBanner.style.display = 'none';
+      return;
+    }
+
+    if (cartSavingsBanner) cartSavingsBanner.style.display = 'flex';
+
+    let totalMrp = 0;
+    let totalOnline = 0;
+
+    cartItemsList.innerHTML = cart.map((item, idx) => {
+      const itemMrpTotal = item.mrp * item.qty;
+      const itemOnlineTotal = item.price * item.qty;
+      totalMrp += itemMrpTotal;
+      totalOnline += itemOnlineTotal;
+
+      return `
+        <div class="cart-item-row">
+          <img src="${item.img}" alt="${item.title}" class="cart-item-thumb">
+          <div class="cart-item-details">
+            <span class="cart-item-title">${item.title}</span>
+            <div class="cart-item-prices">
+              <span class="cart-item-mrp">₹${item.mrp.toLocaleString('en-IN')}</span>
+              <span class="cart-item-online">₹${item.price.toLocaleString('en-IN')}</span>
+            </div>
+          </div>
+          <div class="cart-item-actions">
+            <div class="cart-qty-ctrls">
+              <button type="button" class="cart-qty-btn" onclick="window.updateCartQty(${idx}, -1)">&minus;</button>
+              <span class="cart-qty-num">${item.qty}</span>
+              <button type="button" class="cart-qty-btn" onclick="window.updateCartQty(${idx}, 1)">&plus;</button>
+            </div>
+            <button type="button" class="cart-item-remove" onclick="window.removeCartItem(${idx})">Remove</button>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    const totalSavings = Math.max(0, totalMrp - totalOnline);
+    if (cartMrpTotal) cartMrpTotal.textContent = '₹' + totalMrp.toLocaleString('en-IN');
+    if (cartOnlineTotal) cartOnlineTotal.textContent = '₹' + totalOnline.toLocaleString('en-IN');
+    if (cartSavingsTotal) cartSavingsTotal.textContent = '₹' + totalSavings.toLocaleString('en-IN');
+  }
+
+  window.updateCartQty = updateItemQty;
+  window.removeCartItem = removeItem;
+
+  // Bind Add to Cart buttons across all products & accessories
+  document.querySelectorAll('.btn-add-cart, .btn-add-accessory').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const card = this.closest('.product-card-pro, .accessory-card, .quiz-result-right, .comparison-action-cell');
+      const title = this.dataset.title || card?.querySelector('.product-title, h3')?.textContent || 'DEEBOT Product';
+      const img = this.dataset.img || card?.querySelector('img')?.src || '';
+
+      // Parse price from card or dataset
+      let price = this.dataset.price;
+      let mrp = this.dataset.mrp;
+      if (!price && card) {
+        const onlineText = card.querySelector('.price-online, .accessory-online')?.textContent || '';
+        price = onlineText.replace(/[^0-9]/g, '');
+        const mrpText = card.querySelector('.price-mrp, .accessory-mrp')?.textContent || '';
+        mrp = mrpText.replace(/[^0-9]/g, '');
+      }
+
+      addItemToCart({
+        title: title.trim(),
+        price: parseInt(price, 10) || 49999,
+        mrp: parseInt(mrp, 10) || 89999,
+        img: img
+      });
+    });
+  });
+
+  // Convert Cart to Demo Action
+  if (btnConvertDemo) {
+    btnConvertDemo.addEventListener('click', function () {
+      closeCart();
+      const demoSec = document.getElementById('book-demo-experience');
+      if (demoSec) {
+        demoSec.scrollIntoView({ behavior: 'smooth' });
+        showToast('Cart converted! Choose your preferred slot for a free live demo.');
+      }
+    });
+  }
+
+  if (btnCheckoutNow) {
+    btnCheckoutNow.addEventListener('click', function () {
+      if (cart.length === 0) {
+        showToast('Your cart is empty!');
+        return;
+      }
+      showToast('Proceeding to checkout with official Frootle India warranty...');
+    });
+  }
+
+  /* --------------------------------------------------------------------------
+     8. INTERACTIVE "FIND MY DEEBOT" HOME QUIZ ENGINE
+     -------------------------------------------------------------------------- */
+  const quizPillBtns = document.querySelectorAll('.quiz-pill-btn');
+  const quizResultReason = document.getElementById('quizResultReason');
+  const quizModelTitle = document.getElementById('quizModelTitle');
+  const quizMatchScore = document.getElementById('quizMatchScore');
+  const quizResultImg = document.getElementById('quizResultImg');
+  const quizResultMrp = document.getElementById('quizResultMrp');
+  const quizResultOnline = document.getElementById('quizResultOnline');
+  const quizAddCartBtn = document.getElementById('quizAddCartBtn');
+  const quizBookDemoBtn = document.getElementById('quizBookDemoBtn');
+
+  const quizState = {
+    size: 'small',
+    concern: 'stains',
+    floor: 'tiles'
+  };
+
+  const quizRecommendations = {
+    t90: {
+      title: 'DEEBOT T90 PRO OMNI',
+      score: '✨ 99% Match for Your Villa',
+      mrp: '₹1,99,999',
+      online: '₹1,19,999',
+      mrpVal: 199999,
+      onlineVal: 119999,
+      img: 'https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/The Future of Cleaning/1.webp',
+      reason: 'With 30,000Pa BLAST suction, 40mm high-traction threshold climbing, and OZMO Roller 3.0 pressurized scrub, it easily handles massive villa layouts, stubborn curry oil stains, and elevated marble door dividers.'
+    },
+    t50: {
+      title: 'DEEBOT T50S PRO OMNI',
+      score: '✨ 98% Match for Your Home',
+      mrp: '₹1,49,999',
+      online: '₹84,999',
+      mrpVal: 149999,
+      onlineVal: 84999,
+      img: 'https://ecovacsindia.in/images/deebot-t50s-pro-omni/thumbnil/1.jpg?ver=1',
+      reason: 'Ultra-slim 81mm profile allows deep reach under low Indian sofas and beds, while TruEdge 3.0 wall mopping and ZeroTangle 4.0 comb array eliminate long hair wrapping completely.'
+    },
+    t30e: {
+      title: 'DEEBOT T30e OMNI',
+      score: '✨ 97% Match for 3-BHK Home',
+      mrp: '₹99,999',
+      online: '₹54,999',
+      mrpVal: 99999,
+      onlineVal: 54999,
+      img: 'https://ecovacsindia.in/images/deebot-t30e-omni/thumbnil/T30e-Omni-Main.jpg',
+      reason: 'All-in-one OMNI station washes and hot-air dries mops automatically, while dual rotary spinning mopping scrubs away dried stains with 11,000Pa suction power.'
+    },
+    n30: {
+      title: 'DEEBOT N30 PLUS',
+      score: '✨ 96% Match for 2-BHK Home',
+      mrp: '₹89,999',
+      online: '₹32,999',
+      mrpVal: 89999,
+      onlineVal: 32999,
+      img: 'https://ecovacsindia.in/images/deebot-n30-plus/thumbnil/N30-Plus-Best-Seller.jpg',
+      reason: 'Compact auto-empty dust station provides 60 days of hands-free vacuuming and smart mopping tailored for modern 2 BHK apartments on hard tile and marble floors.'
+    }
+  };
+
+  function updateQuizResult() {
+    let rec = quizRecommendations.t50;
+
+    if (quizState.size === 'large' || quizState.floor === 'thresholds' || (quizState.concern === 'stains' && quizState.size !== 'small')) {
+      rec = quizRecommendations.t90;
+    } else if (quizState.size === 'small' && quizState.concern !== 'stains') {
+      rec = quizRecommendations.n30;
+    } else if (quizState.concern === 'handsfree') {
+      rec = quizRecommendations.t30e;
+    } else {
+      rec = quizRecommendations.t50;
+    }
+
+    if (quizModelTitle) quizModelTitle.textContent = rec.title;
+    if (quizMatchScore) quizMatchScore.textContent = rec.score;
+    if (quizResultReason) quizResultReason.textContent = rec.reason;
+    if (quizResultImg) quizResultImg.src = rec.img;
+    if (quizResultMrp) quizResultMrp.textContent = rec.mrp;
+    if (quizResultOnline) quizResultOnline.textContent = rec.online;
+
+    if (quizAddCartBtn) {
+      quizAddCartBtn.dataset.title = rec.title;
+      quizAddCartBtn.dataset.price = rec.onlineVal;
+      quizAddCartBtn.dataset.mrp = rec.mrpVal;
+      quizAddCartBtn.dataset.img = rec.img;
+    }
+  }
+
+  quizPillBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const stepGroup = this.closest('.quiz-options-group');
+      if (!stepGroup) return;
+      const stepName = stepGroup.dataset.step;
+      const value = this.dataset.val;
+
+      stepGroup.querySelectorAll('.quiz-pill-btn').forEach(b => b.classList.remove('is-selected'));
+      this.classList.add('is-selected');
+
+      quizState[stepName] = value;
+      updateQuizResult();
+    });
+  });
+
+  if (quizBookDemoBtn) {
+    quizBookDemoBtn.addEventListener('click', function () {
+      const demoSec = document.getElementById('book-demo-experience');
+      if (demoSec) demoSec.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+
+  /* --------------------------------------------------------------------------
+     9. SIDE-BY-SIDE SERIES & MODEL COMPARISON MATRIX TOGGLE
+     -------------------------------------------------------------------------- */
+  const compareToggleBtn = document.getElementById('compareToggleBtn');
+  const comparisonMatrixWrapper = document.getElementById('comparisonMatrixWrapper');
+
+  if (compareToggleBtn && comparisonMatrixWrapper) {
+    compareToggleBtn.addEventListener('click', function () {
+      const isOpen = comparisonMatrixWrapper.style.display !== 'none';
+      if (isOpen) {
+        comparisonMatrixWrapper.style.display = 'none';
+        this.classList.remove('is-active');
+        this.innerHTML = `
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M21 3 14 10"/><path d="m3 21 7-7"/></svg>
+          Compare Models
+        `;
+      } else {
+        comparisonMatrixWrapper.style.display = 'block';
+        this.classList.add('is-active');
+        this.innerHTML = `
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          Close Comparison
+        `;
+        comparisonMatrixWrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  }
+
+});
+</script>
+</body>
+</html>
