@@ -76,16 +76,20 @@ header.site-header {
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
-  padding: 0 clamp(16px, 3vw, 40px);
+  padding: 0 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 16px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .brand-group {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 .brand-logo {
@@ -93,40 +97,33 @@ header.site-header {
   align-items: center;
   gap: 8px;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--ink);
+  white-space: nowrap;
 }
 
-.brand-divider {
-  width: 1px;
-  height: 20px;
-  background: var(--border);
-}
-
-.brand-sub {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--ecovacs-blue);
+nav.main-nav {
+  margin-right: auto;
+  min-width: 0;
 }
 
 nav.main-nav ul {
   display: flex;
   align-items: center;
-  gap: clamp(10px, 1.3vw, 20px);
+  gap: clamp(8px, 1.1vw, 16px);
+  margin: 0;
+  padding: 0;
 }
 
 nav.main-nav a {
-  white-space: nowrap;
-}
-
-nav.main-nav a {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--ecovacs-blue);
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
   transition: opacity 0.2s ease;
 }
 
@@ -137,7 +134,9 @@ nav.main-nav a:hover {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .btn-ecovacs {
@@ -145,11 +144,11 @@ nav.main-nav a:hover {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 0 16px;
-  height: 38px;
+  padding: 0 14px;
+  height: 36px;
   border-radius: 6px;
   font-family: 'Poppins', sans-serif;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;
@@ -161,14 +160,15 @@ nav.main-nav a:hover {
 }
 
 .header-phone-btn {
-  height: 38px;
-  padding: 0 14px;
+  height: 36px;
+  padding: 0 12px;
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   white-space: nowrap;
   flex-shrink: 0;
   box-sizing: border-box;
+  font-size: 12px;
 }
 
 .header-phone-btn .phone-text {
@@ -178,13 +178,14 @@ nav.main-nav a:hover {
 }
 
 .header-demo-btn {
-  height: 38px;
-  padding: 0 16px;
+  height: 36px;
+  padding: 0 14px;
   white-space: nowrap;
   flex-shrink: 0;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
+  font-size: 12px;
 }
 
 .btn-ecovacs-primary {
@@ -2254,21 +2255,24 @@ dialog.ecovacs-modal::backdrop {
    ========================================================================== */
 .btn-cart-drawer-toggle {
   height: 36px;
-  padding: 0 14px;
+  padding: 0 12px;
   border-radius: 99px;
   background: var(--ecovacs-blue-light);
   border: 1px solid rgba(24, 71, 132, 0.25);
   color: var(--ecovacs-blue);
   font-family: 'Poppins', sans-serif;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 6px;
   position: relative;
   transition: all 0.2s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .btn-cart-drawer-toggle:hover {
@@ -3937,9 +3941,6 @@ dialog.ecovacs-modal::backdrop {
 </head>
 <body>
 
-<div class="top-announcement">
-  Want a Better Price? Just call us on <strong>1800 258 8085</strong> or Visit our Frootle Experience Store
-</div>
 
 <header class="site-header">
   <div class="brand-group">
