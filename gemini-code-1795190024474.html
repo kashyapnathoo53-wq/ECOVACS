@@ -958,7 +958,7 @@ nav.main-nav a:hover {
   user-select: none;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  padding: 16px;
+  padding: 14px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -967,7 +967,15 @@ nav.main-nav a:hover {
   min-height: 480px;
 }
 
-.map-interactive-wrapper .map-img {
+.map-stage-inner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  line-height: 0;
+  display: block;
+}
+
+.map-stage-inner .map-img {
   width: 100%;
   height: auto;
   max-height: 460px;
@@ -983,8 +991,8 @@ nav.main-nav a:hover {
   border: none;
   cursor: pointer;
   padding: 0;
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4428,58 +4436,60 @@ dialog.ecovacs-modal::backdrop {
       <div class="map-area">
         <h3 class="map-heading">Frootle India Experience Store</h3>
         <div class="map-interactive-wrapper" id="storeMapHotspotContainer">
-          <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/assets/Ecovacs Frootle Store Map (1).png"
-               class="map-img" alt="Frootle India Experience Stores Map" loading="lazy">
+          <div class="map-stage-inner">
+            <img src="https://d395gc8g8y2jw4.cloudfront.net/ecovacsindia.in/Ecovacs_Home/v1/assets/Ecovacs Frootle Store Map (1).png"
+                 class="map-img" alt="Frootle India Experience Stores Map" loading="lazy">
 
-          <!-- Pulsing Map Pin Hotspots (#184784) -->
-          <!-- Delhi NCR -->
-          <button type="button" class="map-hotspot-pin" data-city="Delhi NCR" style="top: 29%; left: 47%;" aria-label="Delhi NCR Experience Stores">
-            <span class="pin-radar"></span>
-            <span class="pin-core"></span>
-            <span class="pin-tooltip">Delhi NCR <span>(3 Stores)</span></span>
-          </button>
+            <!-- Accurately Placed Pulsing Map Pin Hotspots (#184784) -->
+            <!-- Delhi NCR -->
+            <button type="button" class="map-hotspot-pin" data-city="Delhi NCR" style="top: 26.8%; left: 31.4%;" aria-label="Delhi NCR Experience Stores">
+              <span class="pin-radar"></span>
+              <span class="pin-core"></span>
+              <span class="pin-tooltip">Delhi NCR <span>(3 Stores)</span></span>
+            </button>
 
-          <!-- Ahmedabad -->
-          <button type="button" class="map-hotspot-pin" data-city="Ahmedabad" style="top: 48%; left: 28%;" aria-label="Ahmedabad Experience Stores">
-            <span class="pin-radar"></span>
-            <span class="pin-core"></span>
-            <span class="pin-tooltip">Ahmedabad <span>(1 Store)</span></span>
-          </button>
+            <!-- Ahmedabad -->
+            <button type="button" class="map-hotspot-pin" data-city="Ahmedabad" style="top: 44.7%; left: 13.9%;" aria-label="Ahmedabad Experience Stores">
+              <span class="pin-radar"></span>
+              <span class="pin-core"></span>
+              <span class="pin-tooltip">Ahmedabad <span>(1 Store)</span></span>
+            </button>
 
-          <!-- Mumbai -->
-          <button type="button" class="map-hotspot-pin" data-city="Mumbai" style="top: 61%; left: 29%;" aria-label="Mumbai Experience Stores">
-            <span class="pin-radar"></span>
-            <span class="pin-core"></span>
-            <span class="pin-tooltip">Mumbai <span>(2 Stores)</span></span>
-          </button>
+            <!-- Mumbai -->
+            <button type="button" class="map-hotspot-pin" data-city="Mumbai" style="top: 58.9%; left: 16.6%;" aria-label="Mumbai Experience Stores">
+              <span class="pin-radar"></span>
+              <span class="pin-core"></span>
+              <span class="pin-tooltip">Mumbai <span>(2 Stores)</span></span>
+            </button>
 
-          <!-- Pune -->
-          <button type="button" class="map-hotspot-pin" data-city="Pune" style="top: 66%; left: 34%;" aria-label="Pune Experience Stores">
-            <span class="pin-radar"></span>
-            <span class="pin-core"></span>
-            <span class="pin-tooltip">Pune <span>(2 Stores)</span></span>
-          </button>
+            <!-- Pune -->
+            <button type="button" class="map-hotspot-pin" data-city="Pune" style="top: 61.7%; left: 25.0%;" aria-label="Pune Experience Stores">
+              <span class="pin-radar"></span>
+              <span class="pin-core"></span>
+              <span class="pin-tooltip">Pune <span>(2 Stores)</span></span>
+            </button>
 
-          <!-- Hyderabad -->
-          <button type="button" class="map-hotspot-pin" data-city="Hyderabad" style="top: 66%; left: 52%;" aria-label="Hyderabad Experience Stores">
-            <span class="pin-radar"></span>
-            <span class="pin-core"></span>
-            <span class="pin-tooltip">Hyderabad <span>(1 Store)</span></span>
-          </button>
+            <!-- Hyderabad -->
+            <button type="button" class="map-hotspot-pin" data-city="Hyderabad" style="top: 65.2%; left: 37.1%;" aria-label="Hyderabad Experience Stores">
+              <span class="pin-radar"></span>
+              <span class="pin-core"></span>
+              <span class="pin-tooltip">Hyderabad <span>(1 Store)</span></span>
+            </button>
 
-          <!-- Bangalore -->
-          <button type="button" class="map-hotspot-pin" data-city="Bangalore" style="top: 79%; left: 46%;" aria-label="Bangalore Experience Stores">
-            <span class="pin-radar"></span>
-            <span class="pin-core"></span>
-            <span class="pin-tooltip">Bangalore <span>(2 Stores)</span></span>
-          </button>
+            <!-- Bangalore -->
+            <button type="button" class="map-hotspot-pin" data-city="Bangalore" style="top: 81.5%; left: 32.5%;" aria-label="Bangalore Experience Stores">
+              <span class="pin-radar"></span>
+              <span class="pin-core"></span>
+              <span class="pin-tooltip">Bangalore <span>(2 Stores)</span></span>
+            </button>
 
-          <!-- Chennai -->
-          <button type="button" class="map-hotspot-pin" data-city="Chennai" style="top: 80%; left: 59%;" aria-label="Chennai Experience Stores">
-            <span class="pin-radar"></span>
-            <span class="pin-core"></span>
-            <span class="pin-tooltip">Chennai <span>(1 Store)</span></span>
-          </button>
+            <!-- Chennai -->
+            <button type="button" class="map-hotspot-pin" data-city="Chennai" style="top: 85.0%; left: 40.2%;" aria-label="Chennai Experience Stores">
+              <span class="pin-radar"></span>
+              <span class="pin-core"></span>
+              <span class="pin-tooltip">Chennai <span>(1 Store)</span></span>
+            </button>
+          </div>
         </div>
       </div>
 
