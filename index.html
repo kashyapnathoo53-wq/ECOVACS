@@ -114,7 +114,11 @@ header.site-header {
 nav.main-nav ul {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: clamp(10px, 1.3vw, 20px);
+}
+
+nav.main-nav a {
+  white-space: nowrap;
 }
 
 nav.main-nav a {
@@ -141,7 +145,8 @@ nav.main-nav a:hover {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 9px 18px;
+  padding: 0 16px;
+  height: 38px;
   border-radius: 6px;
   font-family: 'Poppins', sans-serif;
   font-size: 12.5px;
@@ -149,6 +154,37 @@ nav.main-nav a:hover {
   cursor: pointer;
   border: 1px solid transparent;
   transition: all 0.25s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.header-phone-btn {
+  height: 38px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.header-phone-btn .phone-text {
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 1;
+}
+
+.header-demo-btn {
+  height: 38px;
+  padding: 0 16px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
 }
 
 .btn-ecovacs-primary {
@@ -3860,6 +3896,32 @@ dialog.ecovacs-modal::backdrop {
 
   .stores-carousel-controls {
     display: none !important;
+  }
+}
+
+
+/* Prevent Navbar Overflow & Phone Button Popping Out on Narrower Screens */
+@media (max-width: 1120px) {
+  header.site-header {
+    padding: 0 14px;
+  }
+
+  .brand-sub,
+  .brand-divider {
+    display: none;
+  }
+
+  .header-phone-btn {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .header-phone-btn .phone-text {
+    display: none;
   }
 }
 
